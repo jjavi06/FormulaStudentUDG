@@ -18,3 +18,34 @@ function nextImage() {
 
 setInterval(nextImage, intervalTime);
 
+
+//MOVIMIENTO DE LA CABECERA
+const header = document.querySelector("header");
+const expandBtn = document.querySelector(".expand-btn");
+let headerShrunk = false;
+
+// Se achica el header solo una vez al hacer scroll
+window.addEventListener("scroll", () => {
+  if (!headerShrunk && window.scrollY > 50) {
+    header.classList.add("shrink");
+    headerShrunk = true;
+  }
+});
+
+
+//MOVIMIENTO FOOTER
+const footerContent = document.querySelector(".contenido-footer");
+
+window.addEventListener("scroll", () => {
+  const scrollY = window.scrollY;
+  const windowHeight = window.innerHeight;
+  const pageHeight = document.body.scrollHeight;
+
+  const distanceToBottom = pageHeight - (scrollY + windowHeight);
+
+  if (distanceToBottom < 60) {
+    footerContent.classList.add("visible");
+  } else {
+    footerContent.classList.remove("visible");
+  }
+});

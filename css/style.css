@@ -1,6 +1,13 @@
 body{
     margin: 0%;
     font-family: 'lexend';
+    font-size: 1.1rem; /* relativo al tamaño base del html */
+}
+h1 {
+    font-size: 5vw; /* 5% del ancho de la pantalla */
+}
+h2{
+    font-size: 1.5rem;
 }
 a {
     text-decoration: none;
@@ -12,21 +19,30 @@ a:hover{
 }
 /*CABECERA Y LOGO CABECERA*/
 header{
-    position: fixed;
+    position: sticky;
     top: 0;
     padding: 3% 5%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 90%;
-    height: 10%;
+    /*height: 10%;*/
     background-color: white;
     box-shadow: 0 0 10px grey;
-    margin-bottom: 2px;
     z-index: 10;
+    transition: all 1s ease;
 }
-.logo{
-    width: 25%;
+header.shrink {
+    padding: 1% 5%;
+}
+  
+.logo {
+    width: 20%;
+    transition: all 1s ease;
+}
+
+header.shrink .logo {
+    width: 10%;
 }
 
 /*MENÚ DE NAVEGACIÓN*/
@@ -57,46 +73,58 @@ nav.menu li{
 
 /*PIE DE PÁGINA*/
 footer{
+    position: relative;
     display: inline-flex;
     background-color: white;
-    width: 100%;
-    height: 230px;
-    box-shadow: 0 0 10px;
-}
-.footer-logo{
-    width: 120px;
-    margin-left: 40px;
-    align-self: center;
+    width: 85%;
+    padding: 1% 7.5%;
+    justify-content: center;
+    box-shadow: 0 0 10px grey;
 }
 .contenido-footer{
     display: flex;
-    width: 80%;
-    align-items: top;
-    justify-content: space-between;
+    width: 100%;
     color: darkblue;
+    justify-content: space-around;
+
+    opacity: 0;
+    transform: translateY(0);
+    transition: all 1.5s ease;
+}
+.contenido-footer.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 .pie-pag li{
     display: flex;
-    margin: 10px 0;
+    margin: 4% 0;
     align-items: center;
+}
+footer ul{
+    margin-right: 4%;
 }
 .icono-footer{
     width: 25px;
     height: 25px;
-    margin-right: 10px;
+    margin-right: 10%;
+}
+.footer-logo{
+    position: absolute;
+    width: 9%;
+    height: auto;
+    left: 2%;
+    bottom: 25%;
 }
 
 /*CONTENIDO CENTRAL DE LA PÁGINA*/
 section{
     position: relative;
+    height: 100%;
     margin: 0 7%;
-    margin-top: 10%;
     padding: 5%;
-    z-index: -3;
+    z-index: 0;
     background-color: white;
-    box-shadow:     
-        0px 0 10px grey,  /* sombra izquierda */
-        0px 0 10px grey;  /* sombra derecha */
+    box-shadow: 0px 0 10px grey;
     justify-content: center;
 }
 #noticias{
@@ -110,7 +138,7 @@ section{
 }
 
 /*Boton enlace*/
-.btn-enlace{
+.btn-azul{
     display: block;
     justify-self: center;
     margin-top: 2%;
@@ -120,8 +148,10 @@ section{
     font-size: 18px;
     border-radius: 10px;
     color: white;
+    cursor: pointer;
+    z-index: 1000;
 }
-.btn-enlace:hover{
+.btn-azul:hover{
     color: darkblue;
     background-color: white;
 }
