@@ -1,0 +1,14 @@
+a{
+    width: 25%;
+}
+img{
+    width: 100%;
+}
+div{
+    display: flex;
+    width: 80%;
+    justify-self: center;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2%;
+}
