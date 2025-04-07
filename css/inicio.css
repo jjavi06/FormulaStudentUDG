@@ -1,0 +1,29 @@
+/* Noticias */
+
+#noticias{
+    display: flex;
+}
+#noticias img{
+    width: 100%;
+}
+#noticias div{
+    padding: 10px;
+}
+
+/*Carousel de imagenes*/
+.carousel{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 10px;
+    justify-self: center;
+}
+
+.img-carousel img{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

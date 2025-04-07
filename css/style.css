@@ -1,3 +1,6 @@
+html {
+  font-size: clamp(14px, 1.5vw, 18px);
+}
 body{
     margin: 0%;
     font-family: 'lexend';
@@ -21,54 +24,84 @@ a:hover{
 header{
     position: sticky;
     top: 0;
-    padding: 3% 5%;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    width: 90%;
-    /*height: 10%;*/
+    padding: 2% 0;
+    width: 100%;
+    z-index: 10;
     background-color: white;
     box-shadow: 0 0 10px grey;
-    z-index: 10;
     transition: all 1s ease;
 }
 header.shrink {
-    padding: 1% 5%;
+    padding: 1% 0;
 }
-  
 .logo {
     width: 20%;
+    align-items: center;
+    justify-self: center;
+    padding-left: 2.5%;
+}
+header .logo img{
+    align-self: center;
+    width: 100%;
+}
+header.shrink .logo{
+    width: 9%;
     transition: all 1s ease;
 }
 
-header.shrink .logo {
-    width: 10%;
+/* Menú hamburguesa */
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 1rem;
 }
 
-/*MENÚ DE NAVEGACIÓN*/
-nav.menu{
+.hamburger {
+    z-index: 20;
+    width: 3%;
+    position: absolute;
+    right: 3%;
+    justify-self: right;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
 }
-nav.menu ul{
-    list-style-type: none;
-    width: 100%;
-    margin: 0;
-    background-color: white;
+
+.hamburger span {
+    width: 55%;
+    height: 3px;
+    background: darkblue;
+    display: block;
+    z-index: 20;
+}
+
+.nav-links {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    background-color: darkblue;
+    position: absolute;
+    top: 30%;
+    right: 4%;
+    padding: 1rem;
+}
+header.shrink .nav-links{
+    top: 9%
+}
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 0;
+    display: block;
+}
+
+.nav-links.show {
     display: flex;
-    justify-content: center;
-    font-weight: bold;
-}
-nav.menu li{
-    display: inline;
-    margin: 12px;
-}
-.menu a{
-    color: darkblue;
-    font-size: 16px;
-}
-.menu a:hover{
-    color: orange;
 }
 
 /*PIE DE PÁGINA*/
@@ -124,20 +157,11 @@ section{
     padding: 5%;
     z-index: 0;
     background-color: white;
-    box-shadow: 0px 0 10px grey;
+    /* box-shadow: 0px 0 10px grey; */
     justify-content: center;
 }
-#noticias{
-    display: flex;
-}
-#noticias img{
-    width: 100%;
-}
-#noticias div{
-    padding: 10px;
-}
 
-/*Boton enlace*/
+/*Boton Azul*/
 .btn-azul{
     display: block;
     justify-self: center;
@@ -156,30 +180,4 @@ section{
     background-color: white;
 }
 
-/*Carousel de imagenes*/
-.carousel{
-    position: relative;
-    width: 80%;
-    height: 500px;
-    overflow: hidden;
-    border-radius: 10px;
-    justify-self: center;
-}
 
-.img-carousel img{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.btn-carousel {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-.btn-carousel img{
-    width: 50px;
-}

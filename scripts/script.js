@@ -49,3 +49,15 @@ window.addEventListener("scroll", () => {
     footerContent.classList.remove("visible");
   }
 });
+
+//manu hamburguesa
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('nav-links');
+const span = document.querySelectorAll(".hamburger span");
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
+  span.forEach(span => {
+    span.style.backgroundColor = navLinks.classList.contains('show') ? 'white' : 'darkblue';
+  });
+});
