@@ -1,10 +1,10 @@
-a{
+#sponsors a{
     width: 25%;
 }
-img{
+#sponsors img{
     width: 100%;
 }
-div{
+#sponsors div{
     display: flex;
     width: 80%;
     justify-self: center;
