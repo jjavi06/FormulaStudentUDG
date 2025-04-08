@@ -57,26 +57,15 @@ header.shrink .logo{
     transition: all 1.5s ease;
 }
 header #headerCar{
+    /* padding-left: 46.5%; */
+    padding-left: 100%;
     position: absolute;
     display: none;
 }
-header.shrink #headerCar 
-{
-    position:absolute;
+header.shrink #headerCar{
     display: block;
-    right: 0vw;
-    animation-duration: 3s;
-    animation-name: move-car;
-    animation-fill-mode: forwards;
-}
-@keyframes move-car {
-    from {
-        translate: 0vw 0;
-    }
-
-    to {
-        translate: -45vw 0;
-    }
+    width: 7%;
+    transition: all 3s ease;
 }
 /* Menú hamburguesa */
 .navbar {
@@ -205,10 +194,5 @@ section{
     color: darkblue;
     background-color: white;
 }
-#createdBy{
-    text-align: center;
-    background-color: darkblue;
-    color: white;
-    font-size: medium;
-}
+
 

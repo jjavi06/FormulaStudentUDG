@@ -1,45 +1,40 @@
-const imagenesInicio = new Array("img/inicio1.png", "img/inicio2.png", "img/inicio3.jpg", "img/inicio4.png");
+const imagenesInicio = new Array("1", "2", "3", "4");
 const fotoInicio = document.getElementById("foto");
-let numFoto = 0;
+let numFoto = 1;
 const intervalTime = 3000; // Cambia cada 3 segundos
 
 window.addEventListener('load', function(){
-    fotoInicio.src = imagenesInicio[numFoto];
-    console.log(numFoto);
+    fotoInicio.src = `/UdgRacingDivision/img/inicio${numFoto}.png`;
 });
 
 function nextImage() {
     numFoto++;
-    if (numFoto == imagenesInicio.length) {
-        numFoto = 0;
+    if (numFoto == 5) {
+        numFoto = 1;
     }
-    fotoInicio.src = imagenesInicio[numFoto];
+    if(numFoto==1)
+      fotoInicio.src = `/UdgRacingDivision/img/inicio${numFoto}.png`;
+    else
+    fotoInicio.src = `/UdgRacingDivision/img/inicio${numFoto}.JPG`;
+    console.log(fotoInicio.src);
+    console.log(`Numero de la foto: ${numFoto}`);
 }
 
-setTimeout(nextImage, intervalTime);
+setInterval(nextImage, intervalTime);
 
 
 //MOVIMIENTO DE LA CABECERA
 const header = document.querySelector("header");
-const expandBtn = document.querySelector(".expand-btn");
 let headerShrunk = false;
 
-function moverCoche(){
-  let coche = document.getElementById("headerCar");
-  coche.style.paddingLeft = "46.5%"
-}
 
 // Se achica el header solo una vez al hacer scroll
 window.addEventListener("scroll", () => {
   if (!headerShrunk && window.scrollY > 50) {
     header.classList.add("shrink");
     headerShrunk = true;
-    setInterval(moverCoche, 500);
   }
 });
-
-
-
 
 //MOVIMIENTO FOOTER
 const footerContent = document.querySelector(".contenido-footer");
