@@ -20,7 +20,7 @@ a {
     cursor: pointer;
 }
 a:hover{
-    color: orange;
+    color: black;
 }
 /*CABECERA Y LOGO CABECERA*/
 header{
@@ -30,7 +30,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 3% 0;
+    padding: 6% 0;
     width: 100%;
     background-color: white;
     box-shadow: 0 0 10px grey;
@@ -38,7 +38,7 @@ header{
 }
 header.shrink {
     transition: all 2.5s ease;
-    padding: 1% 0;
+    padding: 3% 0;
     justify-content: space-between;
 }
 .logo {
@@ -90,8 +90,41 @@ header.shrink #headerCar
         translate: -45vw 0;
     }
 }
+
+/* MENÚ DE NAVEGACIÓN */
+nav.menu{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 90;
+    width: 100%;
+}
+nav.menu ul{
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    background-color: white;
+    box-shadow: grey 0px 0px 10px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+nav.menu li{
+    display: inline;
+    margin: 12px;
+}
+.menu a{
+    color: darkblue;
+    font-size: 16px;
+}
+.menu a:hover{
+    color: black;
+}
+
+
+
 /* Menú hamburguesa */
-.navbar {
+/* .navbar {
     display: flex;
     align-items: center;
     background-color: white;
@@ -140,7 +173,7 @@ header.shrink .nav-links{
 
 .nav-links.show {
     display: flex;
-}
+} */
 
 /*PIE DE PÁGINA*/
 footer{
@@ -193,7 +226,6 @@ section{
     height: 100%;
     margin: 0 7%;
     padding: 5%;
-    z-index: 0;
     background-color: white;
     /* box-shadow: 0px 0 10px grey; */
     justify-content: center;
