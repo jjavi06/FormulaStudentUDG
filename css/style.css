@@ -1,5 +1,6 @@
 html {
   font-size: clamp(14px, 1.5vw, 18px);
+  text-align: justify;
 }
 body{
     margin: 0%;
@@ -12,6 +13,7 @@ h1 {
 h2{
     font-size: 1.5rem;
 }
+
 a {
     text-decoration: none;
     color: inherit;
@@ -23,19 +25,21 @@ a:hover{
 /*CABECERA Y LOGO CABECERA*/
 header{
     position: sticky;
+    z-index: 100;
     top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 2% 0;
     width: 100%;
-    z-index: 10;
     background-color: white;
     box-shadow: 0 0 10px grey;
     transition: all 1s ease;
 }
 header.shrink {
+    transition: all 1.5s ease;
     padding: 1% 0;
+    justify-content: space-between;
 }
 .logo {
     width: 20%;
@@ -47,11 +51,22 @@ header .logo img{
     align-self: center;
     width: 100%;
 }
+
 header.shrink .logo{
     width: 9%;
-    transition: all 1s ease;
+    transition: all 1.5s ease;
 }
-
+header #headerCar{
+    /* padding-left: 46.5%; */
+    padding-left: 100%;
+    position: absolute;
+    display: none;
+}
+header.shrink #headerCar{
+    display: block;
+    width: 7%;
+    transition: all 3s ease;
+}
 /* Menú hamburguesa */
 .navbar {
     display: flex;
