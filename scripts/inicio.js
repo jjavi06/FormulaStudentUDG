@@ -12,10 +12,10 @@ function nextImage() {
     if (numFoto == 5) {
         numFoto = 1;
     }
-    if(numFoto==1)
-      fotoInicio.src = `/UdgRacingDivision/img/inicio${numFoto}.png`;
+    if(numFoto==1 || numFoto == 3)
+        fotoInicio.src = `/UdgRacingDivision/img/inicio${numFoto}.png`;
     else
-    fotoInicio.src = `/UdgRacingDivision/img/inicio${numFoto}.JPG`;
+        fotoInicio.src = `/UdgRacingDivision/img/inicio${numFoto}.jpg`;
     // console.log(fotoInicio.src);
     // console.log(`Numero de la foto: ${numFoto}`);
 }
