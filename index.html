@@ -24,8 +24,8 @@
         <ul class="nav-links" id="nav-links">
             <li><a href="/UdgRacingDivision/index.html">Home</a></li>
             <li><a href="/UdgRacingDivision/sections/aboutUs.html">About Us</a></li>
-            <li><a href="/UdgRacingDivision/sections/sponsors&colaborators.html">Sponsors and Collaborators</a></li>
-            <li><a href="/UdgRacingDivision/sections/contacto.html">Contact Us</a></li>
+            <li><a href="/UdgRacingDivision/sections/sponsors&colaborators.html">Sponsors & Collaborators</a></li>
+            <li><a href="/UdgRacingDivision/sections/contacto.html">Get In Touch</a></li>
         </ul>
     </nav>
 <!--CONTENIDO CENTRAL-->
@@ -39,21 +39,42 @@
             </div>
             <a href="https://udgracingteam.wordpress.com/" class="btn-azul" target="_blank">Old Website</a>
         </article>
-        <article >
+        <hr>
+        <article>
             <h2>News</h2>
             <div id="noticias">
-                <div>
-                    <img src="/UdgRacingDivision/img/img.png" alt="">
-                    <p>Descripción de la foto</p>
+                <button class="carousel-btn prev-btn" aria-label="Previous news">&lt;</button>
+                
+                <!-- Añade esta clase al contenedor de slides -->
+                <div class="slides-container">
+                    <div class="slide">
+                        <img src="/UdgRacingDivision/img/noticiaUdg.png">
+                        <p>We are team from udg</p>
+                    </div>
+                    <div class="slide">
+                        <img src="/UdgRacingDivision/img/inicio1.png">
+                        <p>We have a long history</p>
+                    </div>
+                    <div class="slide">
+                        <img src="/UdgRacingDivision/img/inicio3.jpg">
+                        <p>Cleaning the workshop</p>
+                    </div>
+                    <div class="slide">
+                        <img src="/UdgRacingDivision/img/noticia3d.png">
+                        <p>3D model is ready now</p>
+                    </div>
                 </div>
-                <div>
-                    <img src="/UdgRacingDivision/img/img.png" alt="">
-                    <p>Descripción de la foto</p>
-                </div>
-                <div>
-                    <img src="/UdgRacingDivision/img/img.png" alt="">
-                    <p>Descripción de la foto</p>
-                </div>
+                
+                <button class="carousel-btn next-btn" aria-label="Next news">&gt;</button>
+            </div>
+        </article>
+        <hr>
+        <article id="sponsors">
+            <h2>Sponsors and Partners</h2>
+            <div>
+                <a href="https://www.eic.cat/" target="_blank"><img src="/UdgRacingDivision/img/EIC_blau.jpg"></a>
+                <a href="https://patronateps.udg.edu/" target="_blank"><img src="/UdgRacingDivision/img/patronat.png"></a>
+                <a href="https://www.udg.edu/ca/" target="_blank"><img src="/UdgRacingDivision/img/udg-logo.png"></a>
             </div>
         </article>
     </section>
@@ -62,19 +83,19 @@
         <img src="/UdgRacingDivision/img/udg-logo.png" class="footer-logo">
         <div class="contenido-footer">
             <ul>
-                <h2>Encuéntranos</h2>
+                <!-- <h2>Find Us</h2> -->
                 <li>C/ Maria Aurèlia Capmany i</li>
                 <li>Farnés Nº 61</li>
                 <li>17003 Girona</li>
             </ul>
             <ul>
-                <h2>Conócenos</h2>
+                <!-- <h2>Conócenos</h2> -->
                 <li><img src="/UdgRacingDivision/img/insta-logo.png" class="icono-footer"><a href="https://www.instagram.com/udgracingdivision/" target="_blank"> Instagram</a></li>
                 <li><img src="/UdgRacingDivision/img/tiktok-logo.png" class="icono-footer"><a href="https://www.tiktok.com/@udgracingdivision" target="_blank"> TikTok</a></li>
                 <li><img src="/UdgRacingDivision/img/linkedin-logo.png" class="icono-footer"><a href="https://www.linkedin.com/company/udg-racing-division-1/" target="_blank">Linkedin</a></li>
             </ul>
             <ul>
-                <h2>¿Sigues con dudas?</h2>
+                <!-- <h2>¿Sigues con dudas?</h2> -->
                 <li>racingdivision@eps.udg.edu</li>
                 <li><a href="/UdgRacingDivision/sections/contacto.html">Contáctanos</a></li>
             </ul>
@@ -82,5 +103,6 @@
     </footer>
     <div id="createdBy">Created by Javier Granados - Contact: jmelekhov@gmail.com</div>
     <script src="/UdgRacingDivision/scripts/script.js"></script>
+    <script src="/UdgRacingDivision/scripts/inicio.js"></script>
 </body>
 </html>

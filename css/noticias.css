@@ -1,0 +1,9 @@
+section{
+    display: block;
+    justify-items: center;
+    justify-content: center;
+}
+section img{
+    width: 100%;
+    justify-self: center;
+}
