@@ -45,7 +45,7 @@ function initCarousel() {
     });
     
     // Configurar el ancho del contenedor
-    slidesContainer.style.width = `${slideWidth * slides}%`;
+    slidesContainer.style.width = `${slideWidth * slides.length}%`;
     
     // Iniciar el desplazamiento automático
     startAutoSlide();
