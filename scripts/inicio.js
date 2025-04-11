@@ -4,7 +4,7 @@ let numFoto = 1;
 const intervalTime = 3000; // Cambia cada 3 segundos
 
 window.addEventListener('load', function(){
-    fotoInicio.src = `/racingdivision/img/inicio${numFoto}.png`;
+    fotoInicio.src = `/racingdivision/img/carrusel-inicio${numFoto}.jpg`;
 });
 
 function nextImage() {
@@ -12,12 +12,9 @@ function nextImage() {
     if (numFoto == 5) {
         numFoto = 1;
     }
-    if(numFoto==1 || numFoto == 3)
-        fotoInicio.src = `/racingdivision/img/inicio${numFoto}.png`;
-    else
-        fotoInicio.src = `/racingdivision/img/inicio${numFoto}.jpg`;
-    // console.log(fotoInicio.src);
-    // console.log(`Numero de la foto: ${numFoto}`);
+    fotoInicio.src = `/racingdivision/img/carrusel-inicio${numFoto}.jpg`;
+    console.log(fotoInicio.src);
+    console.log(`Numero de la foto: ${numFoto}`);
 }
 
 setInterval(nextImage, intervalTime);
