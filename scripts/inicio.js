@@ -13,8 +13,8 @@ function nextImage() {
         numFoto = 1;
     }
     fotoInicio.src = `/racingdivision/img/carrusel-inicio${numFoto}.jpg`;
-    console.log(fotoInicio.src);
-    console.log(`Numero de la foto: ${numFoto}`);
+    // console.log(fotoInicio.src);
+    // console.log(`Numero de la foto: ${numFoto}`);
 }
 
 setInterval(nextImage, intervalTime);
@@ -42,7 +42,7 @@ function initCarousel() {
     });
     
     // Configurar el ancho del contenedor
-    slidesContainer.style.width = `${slideWidth * slides.length}%`;
+    slidesContainer.style.width = `${slideWidth * slides.length-1}%`;
     
     // Iniciar el desplazamiento automático
     startAutoSlide();
@@ -52,11 +52,11 @@ function initCarousel() {
 function goToSlide(index) {
     // Asegurarse de que el índice esté dentro de los límites
     if (index < 0) index = slides.length - 1;
-    if (index >= slides.length) index = 0;
+    if (index +2 >= slides.length) index = 0; 
     
     current = index;
     const offset = -current * slideWidth;
-    console.log(offset);
+    // console.log(offset);
     slidesContainer.style.transform = `translateX(${offset}%)`;
     slidesContainer.style.transition = "transform 0.5s ease";
 }
