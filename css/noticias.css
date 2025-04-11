@@ -3,7 +3,10 @@ section{
     justify-items: center;
     justify-content: center;
 }
+section div{
+    width: 60%;
+    justify-self: center;
+}
 section img{
     width: 100%;
-    justify-self: center;
 }
