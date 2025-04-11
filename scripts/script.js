@@ -1,4 +1,4 @@
-
+console.log("Made by: Javier Granados - Contact: jmelekhov@gmail.com");
 //MOVIMIENTO DE LA CABECERA
 const header = document.querySelector("header");
 let headerShrunk = false;
