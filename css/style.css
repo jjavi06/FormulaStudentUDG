@@ -25,7 +25,7 @@ a:hover{
 /*CABECERA Y LOGO CABECERA*/
 header{
     position: sticky;
-    z-index: 100;
+    z-index: 120;
     top: 0;
     display: flex;
     justify-content: center;
@@ -36,6 +36,17 @@ header{
     box-shadow: 0 0 10px grey;
     transition: all 1s ease;
 }
+@media screen and (max-width: 870px) {
+    body{
+        padding-top: 23%;
+    }
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+}
 header.shrink {
     transition: all 2.5s ease;
     padding: 3% 0;
@@ -43,7 +54,7 @@ header.shrink {
 }
 .logo {
     position: absolute;
-    right: 40vw;
+    right: 39.5vw;
     width: 20%;
     align-items: center;
 }
@@ -59,15 +70,6 @@ header.shrink .logo{
     animation-name: move-logo;
     animation-fill-mode: forwards;
 }
-@keyframes move-logo {
-    from {
-        translate: 0vw 0;
-    }
-
-    to {
-        translate: -48vw 0;
-    }
-}
 header #headerCar{
     position: absolute;
     display: none;
@@ -81,15 +83,75 @@ header.shrink #headerCar
     animation-name: move-car;
     animation-fill-mode: forwards;
 }
-@keyframes move-car {
-    from {
-        translate: 0vw 0;
-    }
+.carLogo{
+    width: 7%;
+}
+/* Clases para pantallas pequeñas */
+.logo-movil {
+    position: absolute;
+    right: 30.5vw;
+    width: 40%;
+    align-items: center;
+}
+header .logo-movil img{
+    align-self: center;
+    width: 100%;
+}
 
-    to {
-        translate: -45vw 0;
+header.shrink .logo-movil{
+    width: 20%;
+    transition: all 3s ease;
+    animation-duration: 3s;
+    animation-name: move-logo;
+    animation-fill-mode: forwards;
+}
+.carLogo-movil{
+    width: 15%;
+}
+
+/* MOVIMIENTO DE LOGO Y COCHE EN PANTALLAS PEQUEÑAS */
+@media screen and (min-width: 0px) {
+    @keyframes move-logo {
+        from {
+            translate: 0vw 0;
+        }
+    
+        to {
+            translate: -45vw 0;
+        }
+    }
+    @keyframes move-car {
+        from {
+            translate: 0vw 0;
+        }
+    
+        to {
+            translate: -42vw 0;
+        }
     }
 }
+/* MOVIMIENTO DE LOGO Y COCHE EN PANTALLAS GRANDES */
+@media screen and (min-width: 870px){
+    @keyframes move-logo {
+        from {
+            translate: 0vw 0;
+        }
+    
+        to {
+            translate: -49vw 0;
+        }
+    }
+    @keyframes move-car {
+        from {
+            translate: 0vw 0;
+        }
+    
+        to {
+            translate: -45.8vw 0;
+        }
+    }
+}
+
 
 /* MENÚ DE NAVEGACIÓN */
 nav.menu{
@@ -98,6 +160,7 @@ nav.menu{
     position: fixed;
     z-index: 90;
     width: 100%;
+    display: none;
 }
 nav.menu ul{
     list-style-type: none;
@@ -124,56 +187,81 @@ nav.menu li{
 
 
 /* Menú hamburguesa */
-/* .navbar {
+.navbar {
     display: flex;
     align-items: center;
     background-color: white;
     padding: 1rem;
+    display: none;
 }
 
 .hamburger {
-    z-index: 20;
-    width: 3%;
+    top: 30%;
+    z-index: 140;
+    width: 5%;
     position: absolute;
     right: 3%;
     justify-self: right;
     display: flex;
-    flex-direction: column;
     cursor: pointer;
-    gap: 5px;
+    align-items: center;
 }
 
-.hamburger span {
-    width: 55%;
-    height: 3px;
-    background: darkblue;
+.hamburger img {
+    align-self: center;
+    width: 100%;
     display: block;
-    z-index: 20;
+    z-index: 110;
+    display: none;
 }
-
-.nav-links {
+.hamburger-links .nav-links {
+    width: 40%;
+    position: fixed;
     list-style: none;
     display: none;
     flex-direction: column;
     background-color: darkblue;
-    position: absolute;
-    top: 30%;
-    right: 4%;
+    right: 0;
+    height: 100%;
+    margin: 0;
     padding: 1rem;
+    padding-top: 18%;
+    z-index: 90;
+    top: 0;
 }
-header.shrink .nav-links{
-    top: 9%
-}
-.nav-links li a {
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem 0;
+header.shrink .navbar img{
     display: block;
 }
+.hamburger-links .nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem 0;
+    display: block;
+}
+.hamburger-links img{
+    position: absolute;
+    bottom: 10%;
+    width: 80%;
+    margin-bottom: 10%;
+    align-self: center;
+    transition: all 2s ease;
+}
 
-.nav-links.show {
+.hamburger-links .nav-links.show {
     display: flex;
-} */
+    animation-duration: 2s;
+    animation-name: open-hamburger;
+    animation-fill-mode: forwards;
+}
+@keyframes open-hamburger{
+    from {
+        translate: 40vw 0;
+    }
+
+    to {
+        translate: 0vw 0;
+    }
+}
 
 /*PIE DE PÁGINA*/
 footer{
@@ -224,10 +312,8 @@ footer ul{
 section{
     position: relative;
     height: 100%;
-    margin: 0 7%;
-    padding: 5%;
+    margin: 0 5%;
     background-color: white;
-    /* box-shadow: 0px 0 10px grey; */
     justify-content: center;
 }
 
@@ -239,7 +325,7 @@ section{
     padding: 1%;
     background-color: darkblue;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 0.9rem;
     border-radius: 10px;
     color: white;
     cursor: pointer;
