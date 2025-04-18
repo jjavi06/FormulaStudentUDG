@@ -11,8 +11,7 @@ hr{
     position: relative;
     display: flex;
     justify-content: center;
-    max-width: 80%; /* Ajusta según necesites */
-    margin: 0 auto;
+    max-width: 100%;
     overflow: hidden;
 }
 .slides-container {
@@ -22,8 +21,7 @@ hr{
 }
 
 .slide {
-    min-width: 80%;
-    padding: 10px;
+    min-width: 100%;
     box-sizing: border-box;
     flex-shrink: 0;
 }
@@ -32,8 +30,8 @@ hr{
     height: 200px;
 }
 #noticias div{
-    width: 33.3%;
-    padding: 10px;
+    width: 32%;
+    padding: 0.5%;
 }
 #noticias p{
     justify-self: center;
@@ -64,11 +62,11 @@ hr{
 }
 
 .prev-btn {
-    left: 10px;
+    left: 0;
 }
 
 .next-btn {
-    right: 10px;
+    right: 0;
 }
 
 
@@ -77,7 +75,7 @@ hr{
 .carousel{
     position: relative;
     width: 100%;
-    height: 530px;
+    height: 120px;
     overflow: hidden;
     border-radius: 10px;
     justify-self: center;
@@ -100,7 +98,7 @@ hr{
 }
 #sponsors div{
     display: flex;
-    width: 80%;
+    width: 100%;
     justify-self: center;
     justify-content: space-between;
     align-items: center;

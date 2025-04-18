@@ -38,7 +38,7 @@ function initCarousel() {
     // Mostrar todos los slides y configurar el contenedor
     slides.forEach(slide => {
         slide.style.display = "block";
-        slide.style.minWidth = `${slideWidth / 3}%`;
+        slide.style.minWidth = `${slideWidth / visibleSlides}%`;
     });
     
     // Configurar el ancho del contenedor
@@ -52,7 +52,7 @@ function initCarousel() {
 function goToSlide(index) {
     // Asegurarse de que el índice esté dentro de los límites
     if (index < 0) index = slides.length - 1;
-    if (index +2 >= slides.length) index = 0; 
+    if (index +1 >= slides.length-1) index = 0; 
     
     current = index;
     const offset = -current * slideWidth;
@@ -103,3 +103,15 @@ slidesContainer.addEventListener('mouseleave', startAutoSlide);
 
 // Inicializar el carrusel cuando la ventana se carga
 window.addEventListener('load', initCarousel);
+
+// ACABA CARRUSEL NOTICIAS
+
+// CAMBIAR TAMAÑO CARRUSEL CENTRAL
+document.addEventListener("DOMContentLoaded", () => {
+    const screenWidth = window.innerWidth;
+    const alturaCarrusel = Math.round(screenWidth * 0.8 / 2.3); //0.8 para el 80% de la pantalla que ocupa el carrusel y 2.3 para ajustar la medida
+    const carrusel = document.querySelector(".carousel");
+    if (carrusel) {
+      carrusel.style.height = `${alturaCarrusel}px`;
+    }
+  });
