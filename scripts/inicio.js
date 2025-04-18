@@ -107,9 +107,13 @@ window.addEventListener('load', initCarousel);
 // ACABA CARRUSEL NOTICIAS
 
 // CAMBIAR TAMAÑO CARRUSEL CENTRAL
+const screenWidth = window.innerWidth;
+let dividirAnchura;
+if(screenWidth <= 870)
+    dividirAnchura = 1.6;
+else dividirAnchura = 2.3;
 document.addEventListener("DOMContentLoaded", () => {
-    const screenWidth = window.innerWidth;
-    const alturaCarrusel = Math.round(screenWidth * 0.8 / 2.3); //0.8 para el 80% de la pantalla que ocupa el carrusel y 2.3 para ajustar la medida
+    const alturaCarrusel = Math.round(screenWidth * 0.8 / dividirAnchura); //0.8 para el 80% de la pantalla que ocupa el carrusel y 2.3 para ajustar la medida
     const carrusel = document.querySelector(".carousel");
     if (carrusel) {
       carrusel.style.height = `${alturaCarrusel}px`;
