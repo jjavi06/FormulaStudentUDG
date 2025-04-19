@@ -93,6 +93,9 @@ hr{
 
 /* sponsors */
 @media screen and (min-width: 870px){
+    article{
+        margin-bottom: 4%;
+    }
     #sponsors a{
         width: 25%;
     }
@@ -109,6 +112,9 @@ hr{
     }
 }
 @media screen and (max-width: 870px){
+    article{
+        margin-bottom: 10%;
+    }
     #sponsors div{
         display: block;
         width: 50%;
