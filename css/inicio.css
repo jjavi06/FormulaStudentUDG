@@ -92,17 +92,34 @@ hr{
 }
 
 /* sponsors */
-#sponsors a{
-    width: 25%;
+@media screen and (min-width: 870px){
+    #sponsors a{
+        width: 25%;
+    }
+    #sponsors img{
+        width: 100%;
+    }
+    #sponsors div{
+        display: flex;
+        width: 100%;
+        justify-self: center;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2%;
+    }
 }
-#sponsors img{
-    width: 100%;
-}
-#sponsors div{
-    display: flex;
-    width: 100%;
-    justify-self: center;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 2%;
+@media screen and (max-width: 870px){
+    #sponsors div{
+        display: block;
+        width: 50%;
+        justify-self: center;
+        align-items: center;
+    }
+    #sponsors a{
+        width: 25%;
+    }
+    #sponsors img{
+        width: 100%;
+        margin-bottom: 25%;
+    }
 }
