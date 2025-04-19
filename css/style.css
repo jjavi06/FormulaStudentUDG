@@ -268,17 +268,15 @@ footer{
     position: relative;
     display: inline-flex;
     background-color: white;
-    width: 85%;
-    padding: 1% 7.5%;
+    width: 90%;
+    padding: 1% 5%;
     justify-content: center;
     box-shadow: 0 0 10px grey;
 }
 .contenido-footer{
-    display: flex;
     width: 100%;
     color: darkblue;
     justify-content: space-around;
-
     opacity: 0;
     transform: translateY(0);
     transition: all 1.5s ease;
@@ -292,8 +290,8 @@ footer{
     margin: 3% 0;
     align-items: center;
 }
-footer ul{
-    margin-right: 4%;
+#footer-general ul{
+    margin-right: 0;
 }
 .icono-footer{
     width: 25px;
@@ -307,6 +305,45 @@ footer ul{
     left: 2%;
     bottom: 25%;
 }
+#footer-movil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3% 10%;
+    flex-direction: column;
+}
+#footer-movil ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+}
+#footer-movil p{
+    text-align: center;
+}
+#footer-movil .contenido-fmovil{
+    display: inline-flex;
+    align-items: center;
+}
+#footer-movil .contenido-fmovil a{
+    width: 22%;
+    height: 22%;
+    align-self: center;
+}
+#footer-movil .small-logo{
+    width: 100%;
+    height: 100%;
+}
+/* #footer-movil .logo-footer-movil{
+    justify-self: center;
+    width: 30%;
+}
+#footer-movil .logo-footer-movil img{
+    width: 100%;
+    justify-self: center;
+} */
 
 /*CONTENIDO CENTRAL DE LA PÁGINA*/
 section{

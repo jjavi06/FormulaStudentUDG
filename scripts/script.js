@@ -1,4 +1,6 @@
 console.log("Made by: Javier Granados - Contact: jmelekhov@gmail.com");
+if(window.innerWidth<500)
+  document.getElementById("createdBy").innerHTML = "Created by Javier Granados<br>Contact: jmelekhov@gmail.com";
 //MOVIMIENTO DE LA CABECERA
 //Comprobar que dispositivo es: 
 const esMovil = /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent);
@@ -72,6 +74,9 @@ const seccionCentral = document.querySelector("section");
 const logos = document.querySelectorAll(".logo");
 const cocheLogo = document.getElementById("headerCar");
 
+//Footer movil
+const footerMovil = document.getElementById("footer-movil");
+
 if(window.innerWidth <= 870){
   menuSimple.style.display = "none";
   menuHamburguesa.style.display = "block";
@@ -82,10 +87,16 @@ if(window.innerWidth <= 870){
   });
   cocheLogo.classList.add("carLogo-movil");
   cocheLogo.classList.remove("carLogo");
+  //Cambiar a footer movil
+  footerContent.style.display = "none";
+  footerMovil.style.display = "block";
 }
 else{
   menuSimple.style.display = "block";
   menuHamburguesa.style.display = "none";
   seccionCentral.style.padding = "5%";
+  //Cambiar a footer normal
+  footerMovil.style.display = "none";
+  footerContent.style.display = "flex";
 }
 
