@@ -30,7 +30,9 @@ hr{
     height: 200px;
 }
 #noticias div{
-    width: 32%;
+    /* con box sizing el contenido se adapta y el width total de la noticia es 30% */
+    box-sizing: border-box;
+    width: 30%;
     padding: 0.5%;
 }
 #noticias p{

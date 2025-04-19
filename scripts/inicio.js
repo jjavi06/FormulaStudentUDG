@@ -27,23 +27,50 @@ const nextbtn = document.querySelector(".next-btn");
 const prevbtn = document.querySelector(".prev-btn");
 const slidesContainer = document.querySelector("#noticias .slides-container");
 const slides = document.querySelectorAll("#noticias .slide");
-let current = 0;
-const slideWidth = 33;
+const imagenesNoticias = document.querySelectorAll("#noticias img");
+let current;
 let autoSlideInterval;
-const visibleSlides = 3; // número de slides visibles a la vez
 
+let slideWidth; //anchura de cada noticia con padding incluido
+let visibleSlides; // número de slides visibles a la vez
+let anchoContenedor; //ancho pantalla para saber nº de noticias vistas a la vez
+
+if(window.innerWidth < 870){
+    anchoContenedor = window.innerWidth * 0.90;
+    visibleSlides = 1;
+    slideWidth = anchoContenedor/visibleSlides;
+    imagenesNoticias.forEach(img => {
+        img.style.height = `${slideWidth/2}px`
+    });
+}
+else if(window.innerWidth < 1100){
+    anchoContenedor = window.innerWidth * 0.80;
+    visibleSlides = 2;
+    slideWidth = anchoContenedor/visibleSlides;
+    imagenesNoticias.forEach(img => {
+        img.style.height = `${slideWidth/2}px`
+    });}
+else{
+    anchoContenedor = window.innerWidth * 0.80;
+    visibleSlides = 3;
+    slideWidth = anchoContenedor/visibleSlides;
+    imagenesNoticias.forEach(img => {
+        img.style.height = `${slideWidth/2}px`
+    });}
+//console.log(`Ancho Contenedor: ${anchoContenedor}, Slide Width: ${slideWidth} `);
 
 // Inicialización del carrusel
 function initCarousel() {
     // Mostrar todos los slides y configurar el contenedor
     slides.forEach(slide => {
         slide.style.display = "block";
-        slide.style.minWidth = `${slideWidth / visibleSlides}%`;
+        slide.style.minWidth = `${slideWidth}px`;
     });
     
     // Configurar el ancho del contenedor
-    slidesContainer.style.width = `${slideWidth * slides.length-1}%`;
-    
+    slidesContainer.style.width = `${anchoContenedor}px`;
+    slidesContainer.style.transform = `translateX(0px)`;
+    current = 0;
     // Iniciar el desplazamiento automático
     startAutoSlide();
 }
@@ -51,13 +78,13 @@ function initCarousel() {
 // Función para mover al slide específico
 function goToSlide(index) {
     // Asegurarse de que el índice esté dentro de los límites
-    if (index < 0) index = slides.length - 1;
-    if (index +1 >= slides.length-1) index = 0; 
+    if (index < 0) index = 0;
+    if (index > slides.length - visibleSlides) index = 0; 
     
     current = index;
     const offset = -current * slideWidth;
-    // console.log(offset);
-    slidesContainer.style.transform = `translateX(${offset}%)`;
+    //console.log(offset);
+    slidesContainer.style.transform = `translateX(${offset}px)`;
     slidesContainer.style.transition = "transform 0.5s ease";
 }
 
