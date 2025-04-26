@@ -40,7 +40,7 @@ if(window.innerWidth < 870){
     visibleSlides = 1;
     slideWidth = anchoContenedor/visibleSlides;
     imagenesNoticias.forEach(img => {
-        img.style.height = `${slideWidth/2}px`
+        img.style.height = `${slideWidth/1.77}px`
     });
 }
 else if(window.innerWidth < 1100){
@@ -48,14 +48,14 @@ else if(window.innerWidth < 1100){
     visibleSlides = 2;
     slideWidth = anchoContenedor/visibleSlides;
     imagenesNoticias.forEach(img => {
-        img.style.height = `${slideWidth/2}px`
+        img.style.height = `${slideWidth/1.77}px`
     });}
 else{
     anchoContenedor = window.innerWidth * 0.80;
     visibleSlides = 3;
     slideWidth = anchoContenedor/visibleSlides;
     imagenesNoticias.forEach(img => {
-        img.style.height = `${slideWidth/2}px`
+        img.style.height = `${slideWidth/1.77}px`
     });}
 //console.log(`Ancho Contenedor: ${anchoContenedor}, Slide Width: ${slideWidth} `);
 
