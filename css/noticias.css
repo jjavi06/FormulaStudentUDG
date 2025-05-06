@@ -17,6 +17,7 @@ section img{
 .contenedor-noticias a{
     display: flex;
     align-content: space-between;
+    text-align: center;
 }
 .contenedor-noticias div{
     width: 100%;

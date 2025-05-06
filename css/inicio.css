@@ -37,6 +37,7 @@ hr{
 }
 #noticias p{
     justify-self: center;
+    text-align: center;
 }
 
 /* Botones del carrusel */
