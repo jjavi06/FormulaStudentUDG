@@ -9,6 +9,11 @@ const esTablet = /Tablet|iPad/i.test(navigator.userAgent);
 const header = document.querySelector("header");
 let headerShrunk = false;
 
+//Selección del body y altura del header para hacer modificaciones según el dispositivo
+//Las modificaciones se hacen al final del documento en la comprovación de la screen Width y en headerShrunk
+const body = document.querySelector("body");
+let alturaHeader = header.offsetHeight;
+
 //Si detecta que el dispositivo es un movil, al tocar la pantalla y mover se hace el header mas pequeño, 
 //en caso de ser otro dispositivo, lo hace al hacer scroll.
 if(esMovil || esTablet){
@@ -16,7 +21,9 @@ if(esMovil || esTablet){
     window.addEventListener('touchmove', () =>{
       header.classList.add("shrink");
       headerShrunk = true;
-      document.querySelector("body").style.paddingTop = "17%";
+      //Modificación de la distancia de la section al header
+      if(screen.width < 870)
+        document.querySelector("body").style.paddingTop = `${alturaHeader+20}px`;
     });
   }
 }
@@ -90,6 +97,8 @@ if(window.innerWidth <= 870){
   //Cambiar a footer movil
   footerContent.style.display = "none";
   footerMovil.style.display = "block";
+  //Aplicar distancia de la sección al header
+  body.style.paddingTop = `${alturaHeader+40}px`;
 }
 else{
   menuSimple.style.display = "block";
@@ -98,5 +107,7 @@ else{
   //Cambiar a footer normal
   footerMovil.style.display = "none";
   footerContent.style.display = "flex";
+  //Aplicar distancia de la sección al header
+  body.style.paddingTop = `0px`;
 }
 

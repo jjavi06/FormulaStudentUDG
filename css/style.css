@@ -37,9 +37,6 @@ header{
     transition: all 1s ease;
 }
 @media screen and (max-width: 870px) {
-    body{
-        padding-top: 23%;
-    }
     header {
       position: fixed;
       top: 0;
@@ -110,7 +107,7 @@ header.shrink .logo-movil{
 }
 
 /* MOVIMIENTO DE LOGO Y COCHE EN PANTALLAS PEQUEÑAS */
-@media screen and (min-width: 0px) {
+@media screen and (max-width: 870px) {
     @keyframes move-logo {
         from {
             translate: 0vw 0;
@@ -225,7 +222,6 @@ nav.menu li{
     height: 100%;
     margin: 0;
     padding: 1rem;
-    padding-top: 18%;
     z-index: 90;
     top: 0;
 }
