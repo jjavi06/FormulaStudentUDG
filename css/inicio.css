@@ -119,6 +119,7 @@ hr{
     #sponsors div{
         display: block;
         width: 50%;
+        padding: 0 25%;
         justify-self: center;
         align-items: center;
     }
@@ -129,4 +130,10 @@ hr{
         width: 100%;
         margin-bottom: 25%;
     }
+}
+article h2{
+    text-align: center;
+}
+article .btn-azul{
+    justify-self: center;
 }

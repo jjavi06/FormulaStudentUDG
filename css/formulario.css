@@ -2,6 +2,7 @@ h1{
     font-size: 30px;
     color: darkblue;
     justify-self: center;
+    text-align: center;
 }
 #contact-form{
     width: 75%;
