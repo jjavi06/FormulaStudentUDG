@@ -38,7 +38,7 @@ let anchoContenedor; //ancho pantalla para saber nº de noticias vistas a la vez
 if(window.innerWidth < 870){
     anchoContenedor = window.innerWidth * 0.90;
     visibleSlides = 1;
-    slideWidth = anchoContenedor/visibleSlides;
+    slideWidth = anchoContenedor/visibleSlides - anchoContenedor/visibleSlides * 0.01;
     imagenesNoticias.forEach(img => {
         img.style.height = `${slideWidth/1.77}px`
     });
@@ -46,14 +46,14 @@ if(window.innerWidth < 870){
 else if(window.innerWidth < 1100){
     anchoContenedor = window.innerWidth * 0.80;
     visibleSlides = 2;
-    slideWidth = anchoContenedor/visibleSlides;
+    slideWidth = anchoContenedor/visibleSlides - anchoContenedor/visibleSlides * 0.01;
     imagenesNoticias.forEach(img => {
         img.style.height = `${slideWidth/1.77}px`
     });}
 else{
     anchoContenedor = window.innerWidth * 0.80;
     visibleSlides = 3;
-    slideWidth = anchoContenedor/visibleSlides;
+    slideWidth = anchoContenedor/visibleSlides - anchoContenedor/visibleSlides * 0.01;
     imagenesNoticias.forEach(img => {
         img.style.height = `${slideWidth/1.77}px`
     });}
