@@ -31,40 +31,50 @@
     <!-- Links del menú hamburguesa -->
      <div class="hamburger-links">
         <ul class="nav-links" id="nav-links">
-            <li><a href="/racingdivision/index.html">Home</a></li>
-            <li><a href="/racingdivision/sections/aboutUs.html">About Us</a></li>
-            <li><a href="/racingdivision/sections/sponsors&colaborators.html">Sponsors &<br>Collaborators</a></li>
-            <li><a href="/racingdivision/sections/news.html">News</a></li>
-            <li><a href="/racingdivision/sections/contacto.html">Become a Partner</a></li>
-            <li><a href="/racingdivision/sections/contacto.html">Get In Touch</a></li>
+            <li><a href="/racingdivision/index.html" data-i18n="inicio.home">Home</a></li>
+            <li><a href="/racingdivision/sections/aboutUs.html" data-i18n="inicio.aboutUs">About Us</a></li>
+            <li><a href="/racingdivision/sections/sponsors&colaborators.html" data-i18n="inicio.sponsors">Sponsors &<br>Collaborators</a></li>
+            <li><a href="/racingdivision/sections/news.html" data-i18n="inicio.news">News</a></li>
+            <li><a href="/racingdivision/sections/contacto.html" data-i18n="inicio.contact">Get In Touch</a></li>
             <img src="/racingdivision/img/logo-blanco.png" alt="">
         </ul>
      </div>
 <!--MENÚ DE NAVEGACIÓN-->
     <nav class="menu">
         <ul class="nav-links">
-            <li><a href="/racingdivision/index.html">Home</a></li>
-            <li><a href="/racingdivision/sections/aboutUs.html">About Us</a></li>
-            <li><a href="/racingdivision/sections/sponsors&colaborators.html">Sponsors & Collaborators</a></li>
-            <li><a href="/racingdivision/sections/news.html">News</a></li>
-            <li><a href="/racingdivision/sections/contacto.html">Become a Partner</a></li>
-            <li><a href="/racingdivision/sections/contacto.html">Get In Touch</a></li>
+            <li><a href="/racingdivision/index.html" data-i18n="inicio.home">Home</a></li>
+            <li><a href="/racingdivision/sections/aboutUs.html" data-i18n="inicio.aboutUs">About Us</a></li>
+            <li><a href="/racingdivision/sections/sponsors&colaborators.html" data-i18n="inicio.sponsors">Sponsors & Collaborators</a></li>
+            <li><a href="/racingdivision/sections/news.html" data-i18n="inicio.news">News</a></li>
+            <li><a href="/racingdivision/sections/contacto.html" data-i18n="inicio.contact">Get In Touch</a></li>
+            <select id="language-select">
+                <option value="es">ES</option>
+                <option value="ca">CA</option>
+                <option value="en">EN</option>
+            </select>
         </ul>
     </nav>
 <!--CONTENIDO CENTRAL-->
-    <section class="contenido-inicio">
-        <!--CAROUSEL DE IMAGENES-->
-        <article class="carousel-article">
-            <div class="carousel">
-                <div class="img-carousel">
-                    <img src="/racingdivision/img/carrusel-inicio1.jpg" id="foto">
-                </div>
+    <section class="white-section">
+        <article class="parrafo-inicio">
+            <div>
+                <h2>Welcome to UdG Racing Division</h2>
+                <p>We are a team of engineering students from the University of Girona, currently building a race car to compete in Formula Student Spain 2026. As a non-profit organization, we rely on donations to bring our project to life and make our vision a reality.</p>
             </div>
-            <a href="https://udgracingteam.wordpress.com/" class="btn-azul" target="_blank">Old Website</a>
+            <img src="/racingdivision/img/carrusel-inicio1.jpg" alt="">
         </article>
+        <article class="parrafo-inicio">
+            <img src="/racingdivision/img/carrusel-inicio2.jpg" alt="">
+            <div>
+                <h2>Welcome to UdG Racing Division</h2>
+                <p>We are a team of engineering students from the University of Girona, currently building a race car to compete in Formula Student Spain 2026. As a non-profit organization, we rely on donations to bring our project to life and make our vision a reality.</p>
+            </div>
+        </article>
+    </section>
+    <section class="contenido-inicio, blue-section">
         <hr>
         <!--CARRUSEL NOTICIAS-->
-        <article>
+        <article class="blue-article">
             <h2>News</h2>
             <div id="noticias">
                 <button class="carousel-btn prev-btn" aria-label="Previous news">&lt;</button>
@@ -100,22 +110,23 @@
                 <button class="carousel-btn next-btn" aria-label="Next news">&gt;</button>
             </div>
         </article>
-        <hr>
         <!--SPONSORS-->
-        <article id="sponsors">
+        <hr>
+        <article id="sponsors" class="blue-article">
             <h2>Sponsors and Partners</h2>
             <div>
-                <a href="https://www.eic.cat/" target="_blank"><img src="/racingdivision/img/eic-logo-azul.jpg"></a>
-                <a href="https://patronateps.udg.edu/" target="_blank"><img src="/racingdivision/img/patronat.png"></a>
-                <a href="https://www.udg.edu/ca/" target="_blank"><img src="/racingdivision/img/udg-logo.png"></a>
+                <a href="https://www.eic.cat/" target="_blank"><img src="/racingdivision/img/white-eic-logo.png"></a>
+                <a href="https://patronateps.udg.edu/" target="_blank"><img src="/racingdivision/img/white-patronat-logo.png"></a>
+                <a href="https://www.udg.edu/ca/" target="_blank"><img src="/racingdivision/img/white-udg-logo.png"></a>
             </div>
         </article>
+        <hr>
     </section>
 <!--PIE DE PÁGINA-->
     <footer class="pie-pag">
         <div class="contenido-footer" id="footer-general">
             <ul>
-                <li><img src="/racingdivision/img/udg-logo.png" class="footer-logo"></li>
+                <li><img src="/racingdivision/img/blue-udg-logo.png" class="footer-logo"></li>
             </ul>
             <ul>
                 <li>C/ Maria Aurèlia Capmany i</li>
@@ -128,7 +139,8 @@
                 <li><img src="/racingdivision/img/linkedin-logo.png" class="icono-footer"><a href="https://www.linkedin.com/company/udg-racing-division-1/" target="_blank">Linkedin</a></li>
             </ul>
             <ul>
-                <li>racingdivision@eps.udg.edu</li>
+                <li>info@udgracingdivision.cat</li>
+                <li><a href="/racingdivision/sections/contacto.html">Contact</a></li>
                 <li><a href="/racingdivision/sections/contacto.html">Contact</a></li>
             </ul>
         </div>
