@@ -23,7 +23,7 @@ section img{
     display: flex;
     flex-wrap: wrap;
     justify-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 .contenedor-noticias a{
     display: flex;
@@ -39,6 +39,9 @@ section img{
     box-sizing: border-box;
     padding: 2%;
 }
+.contenedor-noticias img{
+    border-radius: 4%;
+}
 .contenedor-noticias p{
     bottom: 0;
 }
@@ -47,7 +50,7 @@ section img{
         width: 80%;
     }
     .contenedor-noticias a{
-        width: 50%;
+        width: 47%;
     }
 }
 @media screen and (max-width: 870px){
