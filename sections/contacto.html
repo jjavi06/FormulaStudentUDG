@@ -33,7 +33,6 @@
             <li><a href="/racingdivision/sections/aboutUs.html">About Us</a></li>
             <li><a href="/racingdivision/sections/sponsors&colaborators.html">Sponsors &<br>Collaborators</a></li>
             <li><a href="/racingdivision/sections/news.html">News</a></li>
-            <li><a href="/racingdivision/sections/contacto.html">Become a Partner</a></li>
             <li><a href="/racingdivision/sections/contacto.html">Get In Touch</a></li>
             <img src="/racingdivision/img/logo-blanco.png" alt="">
         </ul>
@@ -45,7 +44,6 @@
             <li><a href="/racingdivision/sections/aboutUs.html">About Us</a></li>
             <li><a href="/racingdivision/sections/sponsors&colaborators.html">Sponsors & Collaborators</a></li>
             <li><a href="/racingdivision/sections/news.html">News</a></li>
-            <li><a href="/racingdivision/sections/contacto.html">Become a Partner</a></li>
             <li><a href="/racingdivision/sections/contacto.html">Get In Touch</a></li>
         </ul>
     </nav>
@@ -53,23 +51,33 @@
     <section class="formulario">
         <article>
             <h1>GET IN TOUCH!</h1>
-            <!-- <form id="contact-form" method="POST">
+            <form id="contact-form" method="POST" action="/racingdivision/php/enviar.php">
                 <label for="nombreContacto" id="lblNombre">Name*</label>
-                <input type="text" placeholder="Name" id="nombreContacto" class="entrada-simple">
+                <input name="name" type="text" placeholder="Name" id="nombreContacto" class="entrada-simple">
                 <label for="correoContacto" id="lblCorreo">Email*</label>
-                <input type="email" placeholder="Email" id="correoContacto" class="entrada-simple">
+                <input name="email" type="email" placeholder="Email" id="correoContacto" class="entrada-simple">
+                <label for="subject" id="lblSubject">Subject*</label>
+                <select name="subject" id="subject" class="">
+                    <option value="">- Select an Subject -</option>
+                    <option value="becomeSponsor">Become a Sponsor</option>
+                    <option value="becomePartner">Become a Partner</option>
+                    <option value="haveQuestions">I have a question</option>
+                </select>
+                <!-- HoneyPot -->
+                <input type="text" name="telefono" style="display: none;">
                 <label for="mensajeContacto">Message*</label>
-                <textarea id="mensajeContacto" rows="6" class="entrada-simple" placeholder="Write your message"></textarea>
+                <textarea name="message" id="mensajeContacto" rows="6" class="entrada-simple" placeholder="Write your message"></textarea>
+                <!-- Google reCAPTCHA -->
+                <!-- <div class="g-recaptcha" data-sitekey="6LcjI0YrAAAAANAP1q-m0vDwm1H-80T2jYNWopdt"></div> -->
                 <button type="submit" class="btn-azul">Send a Message</button>
-            </form> -->
-            <a href="https://linktr.ee/UdGRacingDivision" class="btn-azul" target="_blank">Send a Message</a>
+            </form>
         </article>
     </section>
     <!--PIE DE PÁGINA-->
     <footer class="pie-pag">
         <div class="contenido-footer" id="footer-general">
             <ul>
-                <li><img src="/racingdivision/img/udg-logo.png" class="footer-logo"></li>
+                <li><img src="/racingdivision/img/blue-udg-logo.png" class="footer-logo"></li>
             </ul>
             <ul>
                 <li>C/ Maria Aurèlia Capmany i</li>
@@ -82,7 +90,7 @@
                 <li><img src="/racingdivision/img/linkedin-logo.png" class="icono-footer"><a href="https://www.linkedin.com/company/udg-racing-division-1/" target="_blank">Linkedin</a></li>
             </ul>
             <ul>
-                <li>racingdivision@eps.udg.edu</li>
+                <li>info@udgracingdivision.cat</li>
                 <li><a href="/racingdivision/sections/contacto.html">Contact</a></li>
             </ul>
         </div>
@@ -102,5 +110,7 @@
     </footer>
     <div id="createdBy">Created by Javier Granados - Contact: jmelekhov@gmail.com</div>
     <script src="/racingdivision/scripts/script.js"></script>
+    <!-- Script para validación de reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 </html>
