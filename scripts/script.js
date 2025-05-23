@@ -108,9 +108,21 @@ else{
 }
 
 //CAMBIOS DE IDIOMA
-document.getElementById("language-select").addEventListener("change", function () {
+// Detectar si ya hay un idioma guardado
+const savedLang = localStorage.getItem("lang") || "es";
+loadLanguage(savedLang);
+
+// Actualizar el <select> para reflejar el idioma guardado
+const languageSelect = document.getElementById("language-select");
+if (languageSelect) {
+  languageSelect.value = savedLang;
+}
+
+// CAMBIOS DE IDIOMA
+languageSelect.addEventListener("change", function () {
   const lang = this.value;
-  loadLanguage(lang);
+  localStorage.setItem("lang", lang);  // Guardar selección
+  loadLanguage(lang);                  // Aplicar traducción
 });
 
 function loadLanguage(lang) {
@@ -121,32 +133,20 @@ function loadLanguage(lang) {
 }
 
 function applyTranslations(data) {
-  // 1. Buscar todos los elementos con el atributo data-i18n
   const elements = document.querySelectorAll("[data-i18n]");
-
-  // 2. Recorrer cada uno de esos elementos
   elements.forEach(el => {
-
-    // 3. Obtener la clave que indica qué traducción aplicar (ej. "inicio.bienvenida")
     const keys = el.getAttribute("data-i18n").split(".");
-
-    // 4. Usar las claves para acceder al texto en el objeto JSON
     let text = data;
     for (const key of keys) {
       if (text && key in text) {
-        text = text[key]; // Baja un nivel en el objeto
+        text = text[key];
       } else {
-        text = null; // Si alguna clave no existe, se cancela
+        text = null;
         break;
       }
     }
-
-    // 5. Si encontró un texto válido, lo pone en el contenido del elemento
     if (text) {
       el.textContent = text;
     }
   });
 }
-
-// Idioma por defecto
-loadLanguage("es");
