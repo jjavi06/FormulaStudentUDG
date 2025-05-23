@@ -4,15 +4,27 @@
         "aboutUs": "About Us",
         "sponsors": "Sponsors & Collaborators",
         "news": "News",
-        "becomePartner": "Become a Partner",
-        "contact": "Get in Touch"
+        "contact": "Get in Touch",
+        "title1": "The 2026 challenge begins!",
+        "p1": "Behind every bolt, every tube and every curve of this single-seater lie months of design, dedication and passion. This is the result of the collective effort of UdG Racing Division, a multidisciplinary team of students from the University of Girona already gearing up for the 2026 Formula Student Spain season.",
+        "p2": "This machine is more than speed: it’s learning, innovation, and the reflection of a university community united by a shared goal.",
+        "title2": "More than a team, a technical family",
+        "p3": "This is the true driving force behind UdG Racing Division: a group of students, faculty, and collaborators brought together by a shared passion and a common goal.",
+        "p4": "Behind every component of our race car lies countless hours of effort, debate, innovation, and valuable learning. Formula Student is more than a competition, it’s a school of engineering and life.",
+        "p5": "Thank you to everyone who’s part of this journey. The road to 2026 is only possible with you.",
+        "title3": "Every detail matters",
+        "p6": "Precision, analysis, and constant review are key to achieving excellence. At UdG Racing Division, every part is meticulously checked to ensure our race car meets the highest standards of safety, performance, and innovation.",
+        "p7": "It’s not just about building a car: it’s about understanding it, testing, failing, and improving, always as a team. Because the true power behind this project isn’t the engine, it’s the minds that bring it to life.",
+        "title4": "News",
+        "title5": "Sponsors and Collaborators",
+        "contactFooter": "Contact",
+        "sponsorFooter": "Become a Sponsor"
     },
     "sobreNosotros": {
         "home": "Home",
         "aboutUs": "About Us",
         "sponsors": "Sponsors & Collaborators",
         "news": "News",
-        "becomePartner": "Become a Partner",
         "contact": "Get in Touch",
         "title1": "About Us",
         "p1": "At UdG Racing Division, we turn our passion for motorsports into innovation, engineering, and competition. Based at the University of Girona, our team is composed entirely of students from diverse academic backgrounds, united by a common goal: to design, build, and compete with a high-performance formula-style car in the prestigious Formula Student competition.",
@@ -22,5 +34,17 @@
         "p5": "UdG Racing Division – Driven by Passion, Powered by Innovation.",
         "title2": "What is formula student?",
         "p6": "Formula Student is an international engineering competition that challenges university students to design, build, and race single-seater cars. The competition not only tests technical skills but also promotes innovative thinking and pragmatic problem-solving, as teams must tackle challenges ranging from design and manufacturing to economic and commercial management. In doing so, participants develop a comprehensive set of skills that combine theoretical knowledge with practical experience in a demanding and competitive environment — preparing them for future challenges."
+    },
+    "sponsors": {
+        "home": "Home",
+        "aboutUs": "About Us",
+        "sponsors": "Sponsors & Collaborators",
+        "news": "News",
+        "contact": "Get in Touch",
+        "title1": "Help us build our race car!",
+        "p1": "As a non-profit organization, at UdG Racing Division we are looking for sponsors to support our project and help us build the best race car to compete in Formula Student Spain.",
+        "p2": "After several years of inactivity, we’re back—stronger and more motivated than ever.",
+        "p3": "We’re ready to give it our all.",
+        "p4": "Help us make it happen!"
     }
 }

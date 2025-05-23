@@ -4,15 +4,27 @@
         "aboutUs": "Sobre Nosotros",
         "sponsors": "Sponsors & Colaboradores",
         "news": "Noticias",
-        "becomePartner": "Hacerse socio",
-        "contact": "Contáctanos"
+        "contact": "Contáctanos",
+        "title1": "¡Empieza el reto 2026!",
+        "p1": "Detrás de cada tornillo, cada tubo y cada curva de este monoplaza hay meses de dedicación, ingeniería y pasión. Este es el fruto del esfuerzo colectivo del equipo UdG Racing Division, un grupo multidisciplinar de estudiantes de la Universidad de Girona que ya se prepara para la temporada 2026 de la Formula Student Spain.",
+        "p2": "Esta máquina no es solo velocidad: es aprendizaje, innovación y el reflejo de una comunidad universitaria unida por un objetivo común.",
+        "title2": "Más que un equipo, una familia técnica",
+        "p3": "Esta es la verdadera fuerza que impulsa a UdG Racing Division: un grupo de estudiantes, docentes y colaboradores unidos por una misma pasión y un objetivo común.",
+        "p4": "Detrás de cada componente de nuestro monoplaza hay horas de esfuerzo, debate, innovación y mucho aprendizaje. La Formula Student es mucho más que una competición: es una escuela de ingeniería y de vida.",
+        "p5": "Gracias a todos los que formáis parte de este camino. El rumbo hacia 2026 solo es posible con vosotros.",
+        "title3": "Cada detalle cuenta",
+        "p6": "La precisión, el análisis y la revisión constante son clave para alcanzar la excelencia. En UdG Racing Division, cada componente se supervisa con rigor para garantizar que nuestro monoplaza cumpla con los más altos estándares de seguridad, rendimiento e innovación.",
+        "p7": "No se trata solo de construir un coche: se trata de comprenderlo, probar, equivocarse y mejorar, siempre en equipo. Porque la verdadera potencia de este proyecto no es el motor, son las mentes que lo hacen posible.",
+        "title4": "Noticias",
+        "title5": "Sponsors y Colaboradores",
+        "contactFooter": "Contacto",
+        "sponsorFooter": "Hacerse Sponsor"
     },
     "sobreNosotros": {
         "home": "Inicio",
         "aboutUs": "Sobre Nosotros",
         "sponsors": "Sponsors & Colaboradores",
         "news": "Noticias",
-        "becomePartner": "Hacerse socio",
         "contact": "Contáctanos",
         "title1": "Sobre Nosotros",
         "p1": "En UdG Racing Division, convertimos nuestra pasión por el automovilismo en innovación, ingeniería y competición. Con sede en la Universidad de Girona, nuestro equipo está compuesto íntegramente por estudiantes de diversas disciplinas académicas, unidos por un objetivo común: diseñar, construir y competir con un coche de alto rendimiento de estilo fórmula en la prestigiosa competición Formula Student.",
@@ -22,5 +34,17 @@
         "p5": "UdG Racing Division – Impulsados por la Pasión, Movidos por la Innovación.",
         "title2": "¿Qué es Formula Student?",
         "p6": "Formula Student es una competición internacional de ingeniería que desafía a estudiantes universitarios a diseñar, construir y competir con monoplazas de una sola plaza. Esta competición no solo pone a prueba las habilidades técnicas, sino que también fomenta el pensamiento innovador y la resolución práctica de problemas, ya que los equipos deben enfrentar desafíos que van desde el diseño y la fabricación hasta la gestión económica y comercial. De esta manera, los participantes desarrollan un conjunto integral de competencias que combinan el conocimiento teórico con la experiencia práctica en un entorno exigente y competitivo, preparándolos para los desafíos del futuro."
+    },
+    "sponsors": {
+        "home": "Inicio",
+        "aboutUs": "Sobre Nosotros",
+        "sponsors": "Sponsors & Colaboradores",
+        "news": "Noticias",
+        "contact": "Contáctanos",
+        "title1": "¡Ayúdanos a construir nuestro coche!",
+        "p1": "Como organización sin ánimo de lucro, en UdG Racing Division buscamos patrocinadores que impulsen nuestro proyecto y nos ayuden a construir el mejor monoplaza para competir en Formula Student Spain.",
+        "p2": "Tras varios años de inactividad, hemos vuelto con más fuerza y motivación que nunca.",
+        "p3": "Estamos listos para dar lo mejor de nosotros.",
+        "p4": "¡Ayúdanos a hacerlo posible!"
     }
 }
