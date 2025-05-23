@@ -5,7 +5,8 @@ h1{
     text-align: center;
 }
 #contact-form{
-    width: 75%;
+    width: 70%;
+    padding: 0 15%;
     justify-self: center;
 }
 #contact-form input{
@@ -21,6 +22,13 @@ h1{
 #contact-form textarea{
     width: 100%;
 }
-article a{
-    margin-bottom: 4%;
+#contact-form select{
+    width: 101%;
+    height: 35px;
+    margin-bottom: 2%;
+    background-color: white;
+}
+.g-recaptcha{
+    justify-self: center;
+    padding-top: 2%;
 }
