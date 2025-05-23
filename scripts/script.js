@@ -87,7 +87,6 @@ const footerMovil = document.getElementById("footer-movil");
 if(window.innerWidth <= 870){
   menuSimple.style.display = "none";
   menuHamburguesa.style.display = "block";
-  // seccionCentral.style.padding = "3% 5%";
   logos.forEach(logo => {
     logo.classList.add("logo-movil");
     logo.classList.remove("logo");
@@ -103,11 +102,51 @@ if(window.innerWidth <= 870){
 else{
   menuSimple.style.display = "block";
   menuHamburguesa.style.display = "none";
-  seccionCentral.style.padding = "5%";
   //Cambiar a footer normal
   footerMovil.style.display = "none";
   footerContent.style.display = "flex";
-  //Aplicar distancia de la sección al header
-  body.style.paddingTop = `0px`;
 }
 
+//CAMBIOS DE IDIOMA
+document.getElementById("language-select").addEventListener("change", function () {
+  const lang = this.value;
+  loadLanguage(lang);
+});
+
+function loadLanguage(lang) {
+  fetch(`/racingdivision/lang/${lang}.json`)
+    .then(res => res.json())
+    .then(translations => applyTranslations(translations))
+    .catch(err => console.error("Error cargando idioma:", err));
+}
+
+function applyTranslations(data) {
+  // 1. Buscar todos los elementos con el atributo data-i18n
+  const elements = document.querySelectorAll("[data-i18n]");
+
+  // 2. Recorrer cada uno de esos elementos
+  elements.forEach(el => {
+
+    // 3. Obtener la clave que indica qué traducción aplicar (ej. "inicio.bienvenida")
+    const keys = el.getAttribute("data-i18n").split(".");
+
+    // 4. Usar las claves para acceder al texto en el objeto JSON
+    let text = data;
+    for (const key of keys) {
+      if (text && key in text) {
+        text = text[key]; // Baja un nivel en el objeto
+      } else {
+        text = null; // Si alguna clave no existe, se cancela
+        break;
+      }
+    }
+
+    // 5. Si encontró un texto válido, lo pone en el contenido del elemento
+    if (text) {
+      el.textContent = text;
+    }
+  });
+}
+
+// Idioma por defecto
+loadLanguage("es");
