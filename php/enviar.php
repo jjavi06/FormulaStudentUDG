@@ -6,7 +6,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 // ======================== VALIDACIÓN RECAPTCHA =====================
 // // Clave secreta de reCAPTCHA
-// $secret = "6LcjI0YrAAAAAFalGwUP8I52vCOksew9Ywr11Ka5"; 
+// $secret = "recaptcha"; 
 // // Respuesta que se envía desde el formulario
 // $response = $_POST['g-recaptcha-response'];
 // // Verifica con Google
@@ -50,7 +50,7 @@ try {
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
     $mail->Username = 'info@udgracingdivision.cat';
-    $mail->Password = 'jbjc tqyn xkkp rweh';
+    $mail->Password = 'google password';
     $mail->SMTPSecure = 'tls';
     $mail->Port = 587;
 
@@ -59,14 +59,23 @@ try {
     $mail->addAddress('info@udgracingdivision.cat', 'Racing Division');
 
     // Contenido del correo
+    switch($asunto){
+      case 'becomeSponsor':
+        $asunto = 'Become a Sponsor';
+        break;
+      case 'becomePartner':
+        $asunto = 'Become a Partner';
+        break;
+      case 'haveQuestions':
+        $asunto = 'I have a question';
+        break;
+    }
     $mail->isHTML(true);
     $mail->Subject = $asunto ?: 'Nuevo mensaje del formulario';
     $mail->Body    = "
-        <h3>{$asunto}</h3>
-        <p><strong>Nombre:</strong> {$nombre}</p>
+        <p><strong>Name:</strong> {$nombre}</p>
         <p><strong>Email:</strong> {$email}</p>
-        <p><strong>Asunto:</strong> {$asunto}</p>
-        <p><strong>Mensaje:</strong><br>{$mensaje}</p>
+        <p><strong>Message:</strong><br>{$mensaje}</p>
     ";
 
     $mail->send();
