@@ -1,0 +1,26 @@
+{
+    "inicio": {
+        "home": "Inicio",
+        "aboutUs": "Sobre Nosotros",
+        "sponsors": "Sponsors & Colaboradores",
+        "news": "Noticias",
+        "becomePartner": "Hacerse socio",
+        "contact": "Contáctanos"
+    },
+    "sobreNosotros": {
+        "home": "Inicio",
+        "aboutUs": "Sobre Nosotros",
+        "sponsors": "Sponsors & Colaboradores",
+        "news": "Noticias",
+        "becomePartner": "Hacerse socio",
+        "contact": "Contáctanos",
+        "title1": "Sobre Nosotros",
+        "p1": "En UdG Racing Division, convertimos nuestra pasión por el automovilismo en innovación, ingeniería y competición. Con sede en la Universidad de Girona, nuestro equipo está compuesto íntegramente por estudiantes de diversas disciplinas académicas, unidos por un objetivo común: diseñar, construir y competir con un coche de alto rendimiento de estilo fórmula en la prestigiosa competición Formula Student.",
+        "p2": "Más que un simple equipo de carreras, somos un proyecto comprometido con llevar al límite la ingeniería estudiantil, fomentando al mismo tiempo el trabajo en equipo y el desarrollo profesional. Nuestra misión va más allá de los circuitos: aspiramos a dejar un legado duradero dentro de la universidad, inspirando a las futuras generaciones a continuar este emocionante reto.",
+        "p3": "Tras una pausa desde 2017, 2025 marca nuestro esperado regreso, con el total respaldo de la universidad y su profesorado. Con Martí Comamala como tutor académico y el valioso apoyo de antiguos alumnos de la UdG—incluido el profesional de Fórmula 1 Xevi Pujolar—estamos listos para competir al más alto nivel.",
+        "p4": "Acompáñanos en este viaje mientras superamos los límites del rendimiento y la innovación, representando a la Universidad de Girona en circuitos tanto nacionales como internacionales.",
+        "p5": "UdG Racing Division – Impulsados por la Pasión, Movidos por la Innovación.",
+        "title2": "¿Qué es Formula Student?",
+        "p6": "Formula Student es una competición internacional de ingeniería que desafía a estudiantes universitarios a diseñar, construir y competir con monoplazas de una sola plaza. Esta competición no solo pone a prueba las habilidades técnicas, sino que también fomenta el pensamiento innovador y la resolución práctica de problemas, ya que los equipos deben enfrentar desafíos que van desde el diseño y la fabricación hasta la gestión económica y comercial. De esta manera, los participantes desarrollan un conjunto integral de competencias que combinan el conocimiento teórico con la experiencia práctica en un entorno exigente y competitivo, preparándolos para los desafíos del futuro."
+    }
+}
