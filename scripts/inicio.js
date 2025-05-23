@@ -1,27 +1,3 @@
-const imagenesInicio = new Array("1", "2", "3", "4");
-const fotoInicio = document.getElementById("foto");
-let numFoto = 1;
-const intervalTime = 3000; // Cambia cada 3 segundos
-
-window.addEventListener('load', function(){
-    fotoInicio.src = `/racingdivision/img/carrusel-inicio${numFoto}.jpg`;
-});
-
-function nextImage() {
-    numFoto++;
-    if (numFoto == 5) {
-        numFoto = 1;
-    }
-    fotoInicio.src = `/racingdivision/img/carrusel-inicio${numFoto}.jpg`;
-    // console.log(fotoInicio.src);
-    // console.log(`Numero de la foto: ${numFoto}`);
-}
-
-setInterval(nextImage, intervalTime);
-
-
-
-
 // Carusel noticias
 const nextbtn = document.querySelector(".next-btn");
 const prevbtn = document.querySelector(".prev-btn");
@@ -132,17 +108,3 @@ slidesContainer.addEventListener('mouseleave', startAutoSlide);
 window.addEventListener('load', initCarousel);
 
 // ACABA CARRUSEL NOTICIAS
-
-// CAMBIAR TAMAÑO CARRUSEL CENTRAL
-const screenWidth = window.innerWidth;
-let dividirAnchura;
-if(screenWidth <= 870)
-    dividirAnchura = 1.6;
-else dividirAnchura = 2.3;
-document.addEventListener("DOMContentLoaded", () => {
-    const alturaCarrusel = Math.round(screenWidth * 0.8 / dividirAnchura); //0.8 para el 80% de la pantalla que ocupa el carrusel y 2.3 para ajustar la medida
-    const carrusel = document.querySelector(".carousel");
-    if (carrusel) {
-      carrusel.style.height = `${alturaCarrusel}px`;
-    }
-  });
