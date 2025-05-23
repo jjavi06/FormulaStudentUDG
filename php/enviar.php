@@ -63,8 +63,8 @@ try {
       case 'becomeSponsor':
         $asunto = 'Become a Sponsor';
         break;
-      case 'becomePartner':
-        $asunto = 'Become a Partner';
+      case 'becomeMember':
+        $asunto = 'Become a Member';
         break;
       case 'haveQuestions':
         $asunto = 'I have a question';
