@@ -39,6 +39,7 @@ if (!empty($_POST['telefono'])) {
 $nombre  = isset($_POST['name']) ? trim($_POST['name']) : '';
 $email   = isset($_POST['email']) ? trim($_POST['email']) : '';
 $asunto  = isset($_POST['subject']) ? trim($_POST['subject']) : '';
+$organization = isset($_POST['organization']) ? trim($_POST['organization']) : '';
 $mensaje = isset($_POST['message']) ? trim($_POST['message']) : '';
 
 // ========== Configurar PHPMailer ==========
@@ -50,7 +51,7 @@ try {
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
     $mail->Username = 'info@udgracingdivision.cat';
-    $mail->Password = 'google password';
+    $mail->Password = 'jbjc tqyn xkkp rweh';
     $mail->SMTPSecure = 'tls';
     $mail->Port = 587;
 
@@ -72,11 +73,21 @@ try {
     }
     $mail->isHTML(true);
     $mail->Subject = $asunto ?: 'Nuevo mensaje del formulario';
-    $mail->Body    = "
+    if($organization == ""){
+      $mail->Body    = "
         <p><strong>Name:</strong> {$nombre}</p>
         <p><strong>Email:</strong> {$email}</p>
         <p><strong>Message:</strong><br>{$mensaje}</p>
-    ";
+      ";
+    }
+    else{
+        $mail->Body    = "
+        <p><strong>Name:</strong> {$nombre}</p>
+        <p><strong>Email:</strong> {$email}</p>
+        <p><strong>Organization:</strong> {$organization}</p>
+        <p><strong>Message:</strong><br>{$mensaje}</p>
+      ";
+    }
 
     $mail->send();
     echo "Mensaje enviado correctamente.";
