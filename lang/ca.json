@@ -2,9 +2,9 @@
     "inicio": {
         "home": "Inici",
         "aboutUs": "Sobre Nosaltres",
-        "sponsors": "Sponsors & Colaboradors",
-        "news": "Noticies",
-        "contact": "Contáctans",
+        "sponsors": "Patrocinadors & Col·laboradors",
+        "news": "Notícies",
+        "contact": "Contácta'ns",
         "title1": "Comença el repte 2026!",
         "p1": "Darrere cada cargol, cada tub i cada corba d’aquest monoplaça hi ha mesos de dedicació, enginy i passió. Aquest és el fruit del treball col·lectiu de l’UdG Racing Division, un equip multidisciplinari d’estudiants de la Universitat de Girona que ja està en marxa per preparar la temporada 2026 de la Formula Student Spain.",
         "p2": "Aquesta màquina no només és velocitat: és aprenentatge, innovació i el reflex d’una comunitat universitària unida per un mateix objectiu.",
@@ -15,17 +15,17 @@
         "title3": "Cada detall compta",
         "p6": "La precisió, l’anàlisi i la revisió constant són claus per assolir l’excel·lència. A l’UdG Racing Division, cada component és supervisat amb rigor per garantir que el nostre monoplaça compleixi els més alts estàndards de seguretat, rendiment i innovació.",
         "p7": "No es tracta només de construir un cotxe: es tracta de comprendre’l, de provar, fallar i millorar, sempre en equip. Perquè la veritable potència d’aquest projecte no és el motor, sinó les ments que el fan realitat.",
-        "title4": "Noticies",
-        "title5": "Sponsors i Colaboradors",
+        "title4": "Notícies",
+        "title5": "Patrocinadors i Col·laboradors",
         "contactFooter": "Contacte",
-        "sponsorFooter": "Fer-se Sponsor"
+        "sponsorFooter": "Fer-se Patrocinador"
     },
     "sobreNosotros": {
         "home": "Inici",
         "aboutUs": "Sobre Nosaltres",
-        "sponsors": "Sponsors & Colaboradors",
-        "news": "Noticies",
-        "contact": "Contáctans",
+        "sponsors": "Patrocinadors & Col·laboradors",
+        "news": "Notícies",
+        "contact": "Contácta'ns",
         "title1": "Sobre nosaltres",
         "p1": "A UdG Racing Division, convertim la nostra passió pels esports de motor en innovació, enginyeria i competència. Amb seu a la Universitat de Girona, el nostre equip està format íntegrament per estudiants de diferents procedències acadèmiques, units per un objectiu comú: dissenyar, construir i competir amb un cotxe d'alt rendiment a la prestigiosa competició Formula Student.",
         "p2": "Més que un equip de carreres, som un projecte compromès a empènyer els límits de l'enginyeria estudiantil alhora que fomentem el treball en equip i el desenvolupament professional. La nostra missió s'estén més enllà de la pista de carreres: el nostre objectiu és crear un llegat durador dins de la universitat, inspirant a les generacions futures a portar endavant aquest repte emocionant.",
@@ -33,18 +33,49 @@
         "p4": "Uneix-te a aquest viatge mentre emprem els límits de la performance i la innovació, representant la Universitat de Girona en circuits nacionals i internacionals.",
         "p5": "UdG Racing Division – Driven by Passion, Powered by Innovation.",
         "title2": "Què és la Formula Student?",
-        "p6": "Formula Student és una competició internacional d'enginyeria que desafia els estudiants universitaris a dissenyar, construir i córrer cotxes monoplaça. La competició no només prova les habilitats tècniques, sinó que també promou el pensament innovador i la resolució pragmàtica de problemes, ja que els equips han d'abordar reptes que van des del disseny i la fabricació fins a la gestió econòmica i comercial. D'aquesta manera, els participants desenvolupen un conjunt complet d'habilitats que combinen els coneixements teòrics amb l'experiència pràctica en un entorn exigent i competitiu, preparant-los per als reptes de futur."
+        "p6": "Formula Student és una competició internacional d'enginyeria que desafia els estudiants universitaris a dissenyar, construir i córrer cotxes monoplaça. La competició no només prova les habilitats tècniques, sinó que també promou el pensament innovador i la resolució pragmàtica de problemes, ja que els equips han d'abordar reptes que van des del disseny i la fabricació fins a la gestió econòmica i comercial. D'aquesta manera, els participants desenvolupen un conjunt complet d'habilitats que combinen els coneixements teòrics amb l'experiència pràctica en un entorn exigent i competitiu, preparant-los per als reptes de futur.",
+        "contactFooter": "Contacte",
+        "sponsorFooter": "Fer-se Patrocinador"
     },
     "sponsors": {
         "home": "Inici",
         "aboutUs": "Sobre Nosaltres",
-        "sponsors": "Sponsors & Colaboradors",
-        "news": "Noticies",
-        "contact": "Contáctans",
-        "title1": "Ajuda'ns a construïr el nostre cotxe!",
+        "sponsors": "Patrocinadors & Col·laboradors",
+        "news": "Notícies",
+        "contact": "Contácta'ns",
+        "title1": "Ajuda'ns a construir el nostre cotxe!",
         "p1": "Com a organització sense ànim de lucre, a UdG Racing Division busquem patrocinadors que impulsin el nostre projecte i ens ajudin a construir el millor monoplaça per competir a la Formula Student Spain.",
         "p2": "Després de diversos anys d'inactivitat, hem tornat amb més força i motivació que mai.",
         "p3": "Estem preparats per donar el millor de nosaltres.",
-        "p4": "Ajuda’ns a fer-ho possible!"
+        "p4": "Ajuda’ns a fer-ho possible!",
+        "contactFooter": "Contacte",
+        "sponsorFooter": "Fer-se Patrocinador"
+    },
+    "contactForm":{
+        "home": "Inici",
+        "aboutUs": "Sobre Nosaltres",
+        "sponsors": "Patrocinadors & Col·laboradors",
+        "news": "Notícies",
+        "contact": "Contácta'ns",
+        "contactFooter": "Contacte",
+        "sponsorFooter": "Fer-se Patrocinador"
+    },
+    "news":{
+        "home": "Inici",
+        "aboutUs": "Sobre Nosaltres",
+        "sponsors": "Patrocinadors & Col·laboradors",
+        "news": "Notícies",
+        "contact": "Contácta'ns",
+        "contactFooter": "Contacte",
+        "sponsorFooter": "Fer-se Patrocinador"
+    },
+    "noticia": {
+        "home": "Inici",
+        "aboutUs": "Sobre Nosaltres",
+        "sponsors": "Patrocinadors & Col·laboradors",
+        "news": "Notícies",
+        "contact": "Contácta'ns",
+        "contactFooter": "Contacte",
+        "sponsorFooter": "Fer-se Patrocinador"
     }
 }

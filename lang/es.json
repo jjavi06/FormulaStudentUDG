@@ -2,7 +2,7 @@
     "inicio": {
         "home": "Inicio",
         "aboutUs": "Sobre Nosotros",
-        "sponsors": "Sponsors & Colaboradores",
+        "sponsors": "Patrocinadores & Colaboradores",
         "news": "Noticias",
         "contact": "Contáctanos",
         "title1": "¡Empieza el reto 2026!",
@@ -16,35 +16,66 @@
         "p6": "La precisión, el análisis y la revisión constante son clave para alcanzar la excelencia. En UdG Racing Division, cada componente se supervisa con rigor para garantizar que nuestro monoplaza cumpla con los más altos estándares de seguridad, rendimiento e innovación.",
         "p7": "No se trata solo de construir un coche: se trata de comprenderlo, probar, equivocarse y mejorar, siempre en equipo. Porque la verdadera potencia de este proyecto no es el motor, son las mentes que lo hacen posible.",
         "title4": "Noticias",
-        "title5": "Sponsors y Colaboradores",
+        "title5": "Patrocinadores y Colaboradores",
         "contactFooter": "Contacto",
-        "sponsorFooter": "Hacerse Sponsor"
+        "sponsorFooter": "Hacerse Patrocinador"
     },
     "sobreNosotros": {
         "home": "Inicio",
         "aboutUs": "Sobre Nosotros",
-        "sponsors": "Sponsors & Colaboradores",
+        "sponsors": "Patrocinadores & Colaboradores",
         "news": "Noticias",
         "contact": "Contáctanos",
         "title1": "Sobre Nosotros",
-        "p1": "En UdG Racing Division, convertimos nuestra pasión por el automovilismo en innovación, ingeniería y competición. Con sede en la Universidad de Girona, nuestro equipo está compuesto íntegramente por estudiantes de diversas disciplinas académicas, unidos por un objetivo común: diseñar, construir y competir con un coche de alto rendimiento de estilo fórmula en la prestigiosa competición Formula Student.",
+        "p1": "En UdG Racing Division, convertimos nuestra pasión por el automovilismo en innovación, ingeniería y competición. Con sede en la Universidad de Girona, nuestro equipo está compuesto íntegramente por estudiantes de diversas disciplinas académicas, unidos por un objetivo común: diseñar, construir y competir con un coche de alto rendimiento de estilo Fórmula en la prestigiosa competición Formula Student.",
         "p2": "Más que un simple equipo de carreras, somos un proyecto comprometido con llevar al límite la ingeniería estudiantil, fomentando al mismo tiempo el trabajo en equipo y el desarrollo profesional. Nuestra misión va más allá de los circuitos: aspiramos a dejar un legado duradero dentro de la universidad, inspirando a las futuras generaciones a continuar este emocionante reto.",
         "p3": "Tras una pausa desde 2017, 2025 marca nuestro esperado regreso, con el total respaldo de la universidad y su profesorado. Con Martí Comamala como tutor académico y el valioso apoyo de antiguos alumnos de la UdG—incluido el profesional de Fórmula 1 Xevi Pujolar—estamos listos para competir al más alto nivel.",
         "p4": "Acompáñanos en este viaje mientras superamos los límites del rendimiento y la innovación, representando a la Universidad de Girona en circuitos tanto nacionales como internacionales.",
         "p5": "UdG Racing Division – Impulsados por la Pasión, Movidos por la Innovación.",
         "title2": "¿Qué es Formula Student?",
-        "p6": "Formula Student es una competición internacional de ingeniería que desafía a estudiantes universitarios a diseñar, construir y competir con monoplazas de una sola plaza. Esta competición no solo pone a prueba las habilidades técnicas, sino que también fomenta el pensamiento innovador y la resolución práctica de problemas, ya que los equipos deben enfrentar desafíos que van desde el diseño y la fabricación hasta la gestión económica y comercial. De esta manera, los participantes desarrollan un conjunto integral de competencias que combinan el conocimiento teórico con la experiencia práctica en un entorno exigente y competitivo, preparándolos para los desafíos del futuro."
+        "p6": "Formula Student es una competición internacional de ingeniería que desafía a estudiantes universitarios a diseñar, construir y competir con coches monoplaza. Esta competición no solo pone a prueba las habilidades técnicas, sino que también fomenta el pensamiento innovador y la resolución práctica de problemas, ya que los equipos deben enfrentar desafíos que van desde el diseño y la fabricación hasta la gestión económica y comercial. De esta manera, los participantes desarrollan un conjunto integral de competencias que combinan el conocimiento teórico con la experiencia práctica en un entorno exigente y competitivo, preparándolos para los desafíos del futuro.",
+        "contactFooter": "Contacto",
+        "sponsorFooter": "Hacerse Patrocinador"
     },
     "sponsors": {
         "home": "Inicio",
         "aboutUs": "Sobre Nosotros",
-        "sponsors": "Sponsors & Colaboradores",
+        "sponsors": "Patrocinadores & Colaboradores",
         "news": "Noticias",
         "contact": "Contáctanos",
         "title1": "¡Ayúdanos a construir nuestro coche!",
         "p1": "Como organización sin ánimo de lucro, en UdG Racing Division buscamos patrocinadores que impulsen nuestro proyecto y nos ayuden a construir el mejor monoplaza para competir en Formula Student Spain.",
         "p2": "Tras varios años de inactividad, hemos vuelto con más fuerza y motivación que nunca.",
         "p3": "Estamos listos para dar lo mejor de nosotros.",
-        "p4": "¡Ayúdanos a hacerlo posible!"
+        "p4": "¡Ayúdanos a hacerlo posible!",
+        "contactFooter": "Contacto",
+        "sponsorFooter": "Hacerse Patrocinador"
+    },
+    "contactForm":{
+        "home": "Inicio",
+        "aboutUs": "Sobre Nosotros",
+        "sponsors": "Patrocinadores & Colaboradores",
+        "news": "Noticias",
+        "contact": "Contáctanos",
+        "contactFooter": "Contacto",
+        "sponsorFooter": "Hacerse Patrocinador"
+    },
+    "news":{
+        "home": "Inicio",
+        "aboutUs": "Sobre Nosotros",
+        "sponsors": "Patrocinadores & Colaboradores",
+        "news": "Noticias",
+        "contact": "Contáctanos",
+        "contactFooter": "Contacto",
+        "sponsorFooter": "Hacerse Patrocinador"
+    },
+    "noticia": {
+        "home": "Inicio",
+        "aboutUs": "Sobre Nosotros",
+        "sponsors": "Patrocinadores & Colaboradores",
+        "news": "Noticias",
+        "contact": "Contáctanos",
+        "contactFooter": "Contacto",
+        "sponsorFooter": "Hacerse Patrocinador"
     }
 }
