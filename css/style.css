@@ -354,30 +354,6 @@ section{
     color: white;
     box-shadow: 0 0 10px darkblue;
 }
-/* Cambiar paddings de la sección central en función de la pantalla */
-@media screen and (max-width: 870px){
-    section{
-        padding: 0 5%;
-        padding-bottom: 7%;
-    }
-    .blue-article{
-        padding: 5%;
-    }
-    .blue-section{
-        /* padding extra de 1% para que no se vea el pixel de mas en noticias del movil */
-        padding: 5% 1%;
-    }
-}
-@media screen and (min-width: 871px){
-    section{
-        padding: 5% 10%;
-    }
-    .blue-section{
-        /* padding extra de 1% para que no se vea el pixel de mas en noticias del movil */
-        padding: 5% 11%;
-    }
-}
-
 /*Boton Azul*/
 .btn-azul{
     display: block;
@@ -393,10 +369,6 @@ section{
     z-index: 1000;
     border: none;
 }
-.btn-azul:hover{
-    color: darkblue;
-    background-color: white;
-}
 #createdBy{
     position: relative;
     text-align: center;
@@ -406,3 +378,31 @@ section{
     box-shadow: 0 0 6px grey;
     padding: 5px;
 }
+/* Cambiar paddings de la sección central en función de la pantalla */
+@media screen and (max-width: 870px){
+    section{
+        padding: 0 5%;
+        padding-bottom: 7%;
+    }
+    .blue-article{
+        padding: 5%;
+    }
+    .blue-section{
+        /* padding extra de 1% para que no se vea el pixel de mas en noticias del movil */
+        padding: 5% 1%;
+    }
+}
+@media screen and (min-width: 870px){
+    section{
+        padding: 5% 10%;
+    }
+    .blue-section{
+        /* padding extra de 1% para que no se vea el pixel de mas en noticias del movil */
+        padding: 5% 11%;
+    }
+    .btn-azul:hover{
+        color: darkblue;
+        background-color: white;
+    }
+}
+

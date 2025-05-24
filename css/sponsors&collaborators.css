@@ -3,6 +3,7 @@
 }
 #sponsors img{
     width: 100%;
+    margin-top: 3%;
 }
 #sponsors div{
     display: flex;
@@ -13,11 +14,8 @@
     align-items: center;
     margin-bottom: 2%;
 }
-#sponsors img{
-    margin-top: 3%;
-}
 #help-us{
-    padding: 5% 15%;
+    padding: 5% 0%;
     justify-content: center;
 }
 #help-us h2{
@@ -28,4 +26,21 @@
 .cry-for-help{
     text-align: center;
     color: darkblue;
+}
+@media screen and (max-width: 870px){
+    #sponsors a{
+        width: 100%;
+    }
+    #sponsors img{
+        margin: 10% 0;
+    }
+    #sponsors div{
+        width: 50%;
+        padding: 0 25%;
+        flex-wrap: wrap;
+    }
+    #help-us{
+        padding: 0;
+        margin-bottom: 10%;
+    }
 }

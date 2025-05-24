@@ -51,7 +51,7 @@ try {
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
     $mail->Username = 'info@udgracingdivision.cat';
-    $mail->Password = 'jbjc tqyn xkkp rweh';
+    $mail->Password = 'contrseña de aplicación';
     $mail->SMTPSecure = 'tls';
     $mail->Port = 587;
 
