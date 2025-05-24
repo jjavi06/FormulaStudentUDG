@@ -58,23 +58,25 @@
             <h1>GET IN TOUCH!</h1>
             <form id="contact-form" method="POST" action="/racingdivision/php/enviar.php">
                 <label for="nombreContacto" id="lblNombre">Name*</label>
-                <input name="name" type="text" placeholder="Name" id="nombreContacto" class="entrada-simple">
+                <input name="name" type="text" placeholder="Name" id="nombreContacto" class="entrada-simple" required>
                 <label for="correoContacto" id="lblCorreo">Email*</label>
-                <input name="email" type="email" placeholder="Email" id="correoContacto" class="entrada-simple">
+                <input name="email" type="email" placeholder="Email" id="correoContacto" class="entrada-simple" required>
                 <label for="subject" id="lblSubject">Subject*</label>
-                <select name="subject" id="subject" class="">
-                    <option value="">- Select a Subject -</option>
+                <select name="subject" id="subject" required>
+                    <option value="">--Select a Subject--</option>
                     <option value="becomeSponsor">Become a Sponsor</option>
                     <option value="becomeMember">Become a Member</option>
                     <option value="haveQuestions">I have a question</option>
                 </select>
+                <label for="organizacion" id="lblOrganizacion" style="display: none;">Organitzation</label>
+                <input name="organization" type="text" placeholder="Organization" id="organizacion" class="entrada-simple" style="display: none;">
                 <!-- HoneyPot -->
                 <input type="text" name="telefono" style="display: none;">
                 <label for="mensajeContacto">Message*</label>
-                <textarea name="message" id="mensajeContacto" rows="6" class="entrada-simple" placeholder="Write your message"></textarea>
+                <textarea name="message" id="mensajeContacto" rows="6" class="entrada-simple" placeholder="Write your message" required></textarea>
                 <!-- Google reCAPTCHA -->
                 <!-- <div class="g-recaptcha" data-sitekey="recaptcha"></div> -->
-                <button type="submit" class="btn-azul">Send a Message</button>
+                <button type="submit" class="btn-azul" id="sendForm">Send a Message</button>
             </form>
         </article>
     </section>
@@ -115,6 +117,7 @@
     </footer>
     <div id="createdBy">Created by Javier Granados - Contact: jmelekhov@gmail.com</div>
     <script src="/racingdivision/scripts/script.js"></script>
+    <script src="/racingdivision/scripts/contacto.js"></script>
     <!-- Script para validación de reCAPTCHA -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>

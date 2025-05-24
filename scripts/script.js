@@ -127,6 +127,7 @@ languageSelect.addEventListener("change", function () {
 });
 
 function loadLanguage(lang) {
+  document.documentElement.setAttribute("lang", lang);
   fetch(`/racingdivision/lang/${lang}.json`)
     .then(res => res.json())
     .then(translations => applyTranslations(translations))
