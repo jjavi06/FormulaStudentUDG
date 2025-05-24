@@ -1,8 +1,8 @@
-h1{
-    font-size: 30px;
+.contact-title{
     color: darkblue;
     justify-self: center;
     text-align: center;
+    font-size: 2rem;
 }
 #contact-form{
     width: 70%;
@@ -27,6 +27,21 @@ h1{
     height: 35px;
     margin-bottom: 2%;
     background-color: white;
+}
+@media screen and (max-width: 870px){
+    .contact-title{
+        margin-bottom: 8%;
+    }
+    #contact-form{
+        width: 90%;
+        padding: 0 5%;
+    }
+    #contact-form input{
+        margin-bottom: 5%;
+    }
+    #contact-form select{
+        margin-bottom: 5%;
+    }
 }
 .g-recaptcha{
     justify-self: center;

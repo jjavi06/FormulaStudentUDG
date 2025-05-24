@@ -55,7 +55,7 @@
     <!--CONTENIDO CENTRAL-->
     <section class="formulario">
         <article>
-            <h1>GET IN TOUCH!</h1>
+            <h2 class="contact-title">GET IN TOUCH!</h2>
             <form id="contact-form" method="POST" action="/racingdivision/php/enviar.php">
                 <label for="nombreContacto" id="lblNombre">Name*</label>
                 <input name="name" type="text" placeholder="Name" id="nombreContacto" class="entrada-simple" required>
@@ -73,7 +73,7 @@
                 <!-- HoneyPot -->
                 <input type="text" name="telefono" style="display: none;">
                 <label for="mensajeContacto">Message*</label>
-                <textarea name="message" id="mensajeContacto" rows="6" class="entrada-simple" placeholder="Write your message" required></textarea>
+                <textarea name="message" id="mensajeContacto" rows="8" class="entrada-simple" placeholder="Write your message" required></textarea>
                 <!-- Google reCAPTCHA -->
                 <!-- <div class="g-recaptcha" data-sitekey="recaptcha"></div> -->
                 <button type="submit" class="btn-azul" id="sendForm">Send a Message</button>
