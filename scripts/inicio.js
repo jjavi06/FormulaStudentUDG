@@ -1,4 +1,4 @@
-// Carusel noticias
+// =================================== Carusel noticias ========================================
 const nextbtn = document.querySelector(".next-btn");
 const prevbtn = document.querySelector(".prev-btn");
 const slidesContainer = document.querySelector("#noticias .slides-container");
@@ -11,7 +11,13 @@ let slideWidth; //anchura de cada noticia con padding incluido
 let visibleSlides; // número de slides visibles a la vez
 let anchoContenedor; //ancho pantalla para saber nº de noticias vistas a la vez
 
+//CAMBIO DE SITIO IMAGENES DE LOS ARTICULOS CENTRALES
+const imgMedioArriba = document.getElementById("img-medio-arriba");
+const imgMedioAbajo = document.getElementById("img-medio-abajo");
+
 if(window.innerWidth < 870){
+    imgMedioArriba.style.display = "none";
+    imgMedioAbajo.style.display = "block";
     anchoContenedor = window.innerWidth * 0.90;
     visibleSlides = 1;
     slideWidth = anchoContenedor/visibleSlides - anchoContenedor/visibleSlides * 0.01;
@@ -20,6 +26,8 @@ if(window.innerWidth < 870){
     });
 }
 else if(window.innerWidth < 1100){
+    imgMedioArriba.style.display = "block";
+    imgMedioAbajo.style.display = "none";
     anchoContenedor = window.innerWidth * 0.80;
     visibleSlides = 2;
     slideWidth = anchoContenedor/visibleSlides - anchoContenedor/visibleSlides * 0.01;
@@ -27,6 +35,8 @@ else if(window.innerWidth < 1100){
         img.style.height = `${slideWidth/1.77}px`
     });}
 else{
+    imgMedioArriba.style.display = "block";
+    imgMedioAbajo.style.display = "none";
     anchoContenedor = window.innerWidth * 0.80;
     visibleSlides = 3;
     slideWidth = anchoContenedor/visibleSlides - anchoContenedor/visibleSlides * 0.01;
@@ -107,4 +117,11 @@ slidesContainer.addEventListener('mouseleave', startAutoSlide);
 // Inicializar el carrusel cuando la ventana se carga
 window.addEventListener('load', initCarousel);
 
-// ACABA CARRUSEL NOTICIAS
+// ===================================== ACABA CARRUSEL NOTICIAS ================================================
+// ================================== ESTABLECER ALTURA FOTOS INICIO =========================================
+const fotosInicio = document.querySelectorAll(".img-inicio");
+let alturaFoto;
+fotosInicio.forEach(img => {
+    alturaFoto = Math.round(img.width / 1.5);
+    img.style.height = `${alturaFoto}px`
+});

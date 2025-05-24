@@ -1,7 +1,8 @@
 console.log("Made by: Javier Granados - Contact: jmelekhov@gmail.com");
 if(window.innerWidth<500)
   document.getElementById("createdBy").innerHTML = "Created by Javier Granados<br>Contact: jmelekhov@gmail.com";
-//MOVIMIENTO DE LA CABECERA
+
+// ======================================= MOVIMIENTO DE LA CABECERA ==============================================
 //Comprobar que dispositivo es: 
 const esMovil = /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent);
 const esTablet = /Tablet|iPad/i.test(navigator.userAgent);
@@ -107,7 +108,7 @@ else{
   footerContent.style.display = "flex";
 }
 
-//CAMBIOS DE IDIOMA
+// ======================== CAMBIOS DE IDIOMA ==============================
 // Detectar si ya hay un idioma guardado
 const savedLang = localStorage.getItem("lang") || "es";
 loadLanguage(savedLang);

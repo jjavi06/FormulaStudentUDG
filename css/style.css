@@ -22,7 +22,7 @@ a {
 a:hover{
     color: black;
 }
-/*CABECERA Y LOGO CABECERA*/
+/* ====================== CABECERA Y LOGO CABECERA ==================*/
 header{
     position: sticky;
     z-index: 120;
@@ -106,7 +106,7 @@ header.shrink .logo-movil{
     width: 15%;
 }
 
-/* MOVIMIENTO DE LOGO Y COCHE EN PANTALLAS PEQUEÑAS */
+/* =================== MOVIMIENTO DE LOGO Y COCHE EN PANTALLAS PEQUEÑAS ====================== */
 @media screen and (max-width: 870px) {
     @keyframes move-logo {
         from {
@@ -127,7 +127,7 @@ header.shrink .logo-movil{
         }
     }
 }
-/* MOVIMIENTO DE LOGO Y COCHE EN PANTALLAS GRANDES */
+/* ====================== MOVIMIENTO DE LOGO Y COCHE EN PANTALLAS GRANDES ====================== */
 @media screen and (min-width: 871px){
     @keyframes move-logo {
         from {
@@ -150,9 +150,8 @@ header.shrink .logo-movil{
 }
 
 
-/* MENÚ DE NAVEGACIÓN */
+/* ==================================== MENÚ DE NAVEGACIÓN =================================== */
 nav.menu{
-    justify-content: center;
     position: fixed;
     z-index: 90;
     width: 100%;
@@ -166,8 +165,9 @@ nav.menu ul{
     background-color: white;
     box-shadow: grey 0px 0px 10px;
     display: flex;
-    justify-content: center;
     font-weight: bold;
+    padding: 0;
+    justify-content: center;
 }
 nav.menu li{
     display: inline;
@@ -180,8 +180,6 @@ nav.menu li{
 .menu a:hover{
     color: black;
 }
-
-
 
 /* Menú hamburguesa */
 .navbar {
@@ -241,7 +239,6 @@ header.shrink .navbar img{
     align-self: center;
     transition: all 2s ease;
 }
-
 .hamburger-links .nav-links.show {
     display: flex;
     animation-duration: 2s;
@@ -257,8 +254,17 @@ header.shrink .navbar img{
         translate: 0vw 0;
     }
 }
+/* Selector de idioma */
+#language-select{
+    position: absolute;
+    right: 15px;
+    align-self: center;
+    border-style: none;
+    color: darkblue;
+    background-color: white;
+}
 
-/*PIE DE PÁGINA*/
+/* =============================== PIE DE PÁGINA ================================== */
 footer{
     position: relative;
     display: inline-flex;
@@ -331,7 +337,7 @@ footer{
     height: 100%;
 }
 
-/*CONTENIDO CENTRAL DE LA PÁGINA*/
+/* ============================= CONTENIDO CENTRAL DE LA PÁGINA ================================= */
 section{
     position: relative;
     height: 100%;
@@ -351,12 +357,24 @@ section{
 /* Cambiar paddings de la sección central en función de la pantalla */
 @media screen and (max-width: 870px){
     section{
-        padding: 4% 5%;
+        padding: 0 5%;
+        padding-bottom: 7%;
+    }
+    .blue-article{
+        padding: 5%;
+    }
+    .blue-section{
+        /* padding extra de 1% para que no se vea el pixel de mas en noticias del movil */
+        padding: 5% 1%;
     }
 }
 @media screen and (min-width: 871px){
     section{
         padding: 5% 10%;
+    }
+    .blue-section{
+        /* padding extra de 1% para que no se vea el pixel de mas en noticias del movil */
+        padding: 5% 11%;
     }
 }
 
@@ -387,13 +405,4 @@ section{
     font-size: medium;
     box-shadow: 0 0 6px grey;
     padding: 5px;
-}
-/* Selector de idioma */
-#language-select{
-    position: absolute;
-    right: 15px;
-    align-self: center;
-    border-style: none;
-    color: darkblue;
-    background-color: white;
 }
