@@ -1,12 +1,13 @@
 <?php
 session_start();
 require '../vendor/autoload.php';
+  require 'claves.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 // ======================== VALIDACIÓN RECAPTCHA =====================
 // Clave secreta de reCAPTCHA
-$secret = "catcha key"; 
+$secret = GetCaptchaKeyPhp(); 
 // Respuesta que se envía desde el formulario
 $response = $_POST['g-recaptcha-response'];
 // Verifica con Google
@@ -50,8 +51,8 @@ try {
     $mail->isSMTP();
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
-    $mail->Username = 'info@udgracingdivision.cat';
-    $mail->Password = 'google password';
+    $mail->Username = GetAppPasswordUser();
+    $mail->Password = GetAppPasswordKey();
     $mail->SMTPSecure = 'tls';
     $mail->Port = 587;
 
@@ -131,9 +132,9 @@ function MostrarMensaje($name = "", $mail = "", $mensaje = "", bool $valido){
         <ul class="nav-links" id="nav-links">
             <li><a href="/racingdivision/index.html" data-i18n="contactForm.home">Home</a></li>
             <li><a href="/racingdivision/sections/aboutUs.html" data-i18n="contactForm.aboutUs">About Us</a></li>
-            <li><a href="/racingdivision/sections/sponsors&collaborators.html" data-i18n="contactForm.sponsors">Sponsors &<br>Collaborators</a></li>
+            <li><a href="/racingdivision/sections/sponsors&collaborators.php" data-i18n="contactForm.sponsors">Sponsors &<br>Collaborators</a></li>
             <li><a href="/racingdivision/sections/news.html" data-i18n="contactForm.news">News</a></li>
-            <li><a href="/racingdivision/sections/contacto.html" data-i18n="contactForm.contact">Get In Touch</a></li>
+            <li><a href="/racingdivision/sections/contacto.php" data-i18n="contactForm.contact">Get In Touch</a></li>
             <img src="/racingdivision/img/logo-blanco.png" alt="">
         </ul>
     </div>
@@ -142,9 +143,9 @@ function MostrarMensaje($name = "", $mail = "", $mensaje = "", bool $valido){
         <ul class="nav-links">
             <li><a href="/racingdivision/index.html" data-i18n="contactForm.home">Home</a></li>
             <li><a href="/racingdivision/sections/aboutUs.html" data-i18n="contactForm.aboutUs">About Us</a></li>
-            <li><a href="/racingdivision/sections/sponsors&collaborators.html" data-i18n="contactForm.sponsors">Sponsors & Collaborators</a></li>
+            <li><a href="/racingdivision/sections/sponsors&collaborators.php" data-i18n="contactForm.sponsors">Sponsors & Collaborators</a></li>
             <li><a href="/racingdivision/sections/news.html" data-i18n="contactForm.news">News</a></li>
-            <li><a href="/racingdivision/sections/contacto.html" data-i18n="contactForm.contact">Get In Touch</a></li>
+            <li><a href="/racingdivision/sections/contacto.php" data-i18n="contactForm.contact">Get In Touch</a></li>
             <select id="language-select">
                 <option value="es">ES</option>
                 <option value="ca">CA</option>
@@ -191,8 +192,8 @@ function MostrarMensaje($name = "", $mail = "", $mensaje = "", bool $valido){
             </ul>
             <ul>
                 <li>info@udgracingdivision.cat</li>
-                <li><a href="/racingdivision/sections/contacto.html" data-i18n="contactForm.contactFooter">Contact</a></li>
-                <li><a href="/racingdivision/sections/contacto.html" data-i18n="contactForm.sponsorFooter">Become a Sponsor</a></li>            </ul>
+                <li><a href="/racingdivision/sections/contacto.php" data-i18n="contactForm.contactFooter">Contact</a></li>
+                <li><a href="/racingdivision/sections/contacto.php" data-i18n="contactForm.sponsorFooter">Become a Sponsor</a></li>            </ul>
         </div>
         <!-- footer movil -->
         <div id="footer-movil">
@@ -200,7 +201,7 @@ function MostrarMensaje($name = "", $mail = "", $mensaje = "", bool $valido){
                 <li><a href="https://www.instagram.com/udgracingdivision/" target="_blank"><img src="/racingdivision/img/insta-logo.png" class="icono-footer"></a></li>
                 <li><a href="https://www.tiktok.com/@udgracingdivision" target="_blank"><img src="/racingdivision/img/tiktok-logo.png" class="icono-footer"></a></li>
                 <li><a href="https://www.linkedin.com/company/udg-racing-division-1/" target="_blank"><img src="/racingdivision/img/linkedin-logo.png" class="icono-footer"></a></li>
-                <li><a href="/racingdivision/sections/contacto.html"><img src="/racingdivision/img/phone-logo.png" class="icono-footer"></a></li>
+                <li><a href="/racingdivision/sections/contacto.php"><img src="/racingdivision/img/phone-logo.png" class="icono-footer"></a></li>
             </ul>
             <div class="contenido-fmovil">
                 <a href="https://www.udg.edu/ca/" target="_blank"><img src="/racingdivision/img/udg-small-logo.png" class="small-logo"></a>
