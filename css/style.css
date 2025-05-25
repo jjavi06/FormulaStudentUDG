@@ -255,13 +255,23 @@ header.shrink .navbar img{
     }
 }
 /* Selector de idioma */
-#language-select{
+.lang-sel-pc{
     position: absolute;
     right: 15px;
     align-self: center;
     border-style: none;
     color: darkblue;
     background-color: white;
+}
+.lang-sel-mobile{
+    background-color: darkblue;
+    color: white;
+    border-style: none;
+    padding: 0;
+    align-self: center;
+    margin: 0.5rem auto;
+    width: fit-content;
+    display: block;  
 }
 
 /* =============================== PIE DE PÁGINA ================================== */

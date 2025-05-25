@@ -1,8 +1,7 @@
 <?php
 session_start();
 require '../vendor/autoload.php';
-  require 'claves.php';
-
+require __DIR__ . '/claves.php';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 // ======================== VALIDACIÓN RECAPTCHA =====================
@@ -93,7 +92,7 @@ try {
     $mail->send();
     $valido = true;
     MostrarMensaje($nombre, $email, $mensaje, $valido);
-} catch (Exception) {
+} catch (Exception $e) {
     $valido = false;
     MostrarMensaje("", "", "", $valido);
 }
@@ -146,7 +145,7 @@ function MostrarMensaje($name = "", $mail = "", $mensaje = "", bool $valido){
             <li><a href="/racingdivision/sections/sponsors&collaborators.php" data-i18n="contactForm.sponsors">Sponsors & Collaborators</a></li>
             <li><a href="/racingdivision/sections/news.html" data-i18n="contactForm.news">News</a></li>
             <li><a href="/racingdivision/sections/contacto.php" data-i18n="contactForm.contact">Get In Touch</a></li>
-            <select id="language-select">
+            <select id="language-select-pc" class="lang-sel-pc">
                 <option value="es">ES</option>
                 <option value="ca">CA</option>
                 <option value="en">EN</option>

@@ -114,7 +114,12 @@ const savedLang = localStorage.getItem("lang") || "es";
 loadLanguage(savedLang);
 
 // Actualizar el <select> para reflejar el idioma guardado
-const languageSelect = document.getElementById("language-select");
+let languageSelect;
+if(window.innerWidth < 870)
+  languageSelect = document.getElementById("language-select-mobile");
+else
+  languageSelect = document.getElementById("language-select-pc");
+
 if (languageSelect) {
   languageSelect.value = savedLang;
 }
