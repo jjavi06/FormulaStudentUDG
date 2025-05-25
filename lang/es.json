@@ -77,5 +77,12 @@
         "contact": "Contáctanos",
         "contactFooter": "Contacto",
         "sponsorFooter": "Hacerse Patrocinador"
+    },
+    "mensaje": {
+        "estadoValido": "El mensaje se ha enviado correctamente.",
+        "estadoError": "Ha habido un error al enviar el mensaje, vuelve a intentarlo mas tarde.",
+        "nombre": "Nombre: ",
+        "email": "Correo: ",
+        "mensaje": "Mensaje: "
     }
 }

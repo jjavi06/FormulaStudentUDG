@@ -1,0 +1,14 @@
+.estado-mensaje{
+    text-align: center;
+}
+
+@media screen and (max-width: 870px){
+    .contenedor-mensaje{
+        padding: 10% 5%;
+    }
+}
+@media screen and (min-width: 870px){
+    .contenedor-mensaje{
+        padding: 10%;
+    }
+}
