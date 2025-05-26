@@ -76,30 +76,30 @@
         </article>
         <article>
             <form id="contact-form" method="POST" action="/racingdivision/php/enviar.php">
-                <label for="nombreContacto" id="lblNombre">Name*</label>
-                <input name="name" type="text" placeholder="Name" id="nombreContacto" class="entrada-simple" required>
-                <label for="correoContacto" id="lblCorreo">Email*</label>
-                <input name="email" type="email" placeholder="Email" id="correoContacto" class="entrada-simple" required>
-                <label for="subject" id="lblSubject">Subject*</label>
+                <label for="nombreContacto" id="lblNombre" data-i18n="sponsors.formName">Name*</label>
+                <input name="name" type="text" id="nombreContacto" class="entrada-simple" required>
+                <label for="correoContacto" id="lblCorreo" data-i18n="sponsors.formEmail">Email*</label>
+                <input name="email" type="email" id="correoContacto" class="entrada-simple" required>
+                <label for="subject" id="lblSubject" data-i18n="sponsors.formSubject">Subject*</label>
                 <select name="subject" id="subject" required>
-                    <option value="">--Select a Subject--</option>
-                    <option value="becomeSponsor">Become a Sponsor</option>
-                    <option value="becomeMember">Become a Member</option>
-                    <option value="haveQuestions">I have a question</option>
+                    <option value="" data-i18n="sponsors.formOp1">--Select a Subject--</option>
+                    <option value="becomeSponsor" data-i18n="sponsors.formOp2">Become a Sponsor</option>
+                    <option value="becomeMember" data-i18n="sponsors.formOp3">Become a Member</option>
+                    <option value="haveQuestions" data-i18n="sponsors.formOp4">I have a question</option>
                 </select>
-                <label for="organizacion" id="lblOrganizacion" style="display: none;">Organization</label>
-                <input name="organization" type="text" placeholder="Organization" id="organizacion" class="entrada-simple" style="display: none;">
+                <label for="organizacion" id="lblOrganizacion" style="display: none;" data-i18n="sponsors.formOrganization">Organization</label>
+                <input name="organization" type="text" id="organizacion" class="entrada-simple" style="display: none;">
                 <!-- HoneyPot -->
                 <input type="text" name="telefono" style="display: none;">
-                <label for="mensajeContacto">Message*</label>
-                <textarea name="message" id="mensajeContacto" rows="8" class="entrada-simple" placeholder="Write your message" required></textarea>
+                <label for="mensajeContacto" data-i18n="sponsors.formMessage">Message*</label>
+                <textarea name="message" id="mensajeContacto" rows="8" class="entrada-simple" required></textarea>
                 <!-- Google reCAPTCHA -->
                 <?php
                     require '../php/claves.php';
                     $key = GetCaptchaKeyHtml();
                     echo '<div class="g-recaptcha" data-sitekey="' . $key . '"></div>'
                 ?>
-                <button type="submit" class="btn-azul" id="sendForm">Send a Message</button>
+                <button type="submit" class="btn-azul" id="sendForm" data-i18n="sponsors.send">Send a Message</button>
             </form>
         </article>
     </section>
