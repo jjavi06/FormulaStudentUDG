@@ -25,7 +25,7 @@ if (!isset($_SESSION['ultimo_envio'])) {
 } else {
   $tiempo_entre_envios = time() - $_SESSION['ultimo_envio'];
   if ($tiempo_entre_envios < 60) {
-    die(MostrarMensaje("", "", "", false));
+    die(MostrarMensaje(false));
   }
   $_SESSION['ultimo_envio'] = time();
 }
