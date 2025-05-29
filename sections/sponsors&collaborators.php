@@ -15,6 +15,14 @@
     <link rel="stylesheet" href="/racingdivision/css/style.css">
     <link rel="stylesheet" href="/racingdivision/css/sponsors&collaborators.css">
     <link rel="stylesheet" href="/racingdivision/css/formulario.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JL7X80MYF6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-JL7X80MYF6');
+    </script>
 </head>
 <body>
     <!--CABECERA DE LA PÁGINA-->
