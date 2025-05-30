@@ -1,7 +1,6 @@
 .noticia{
     display: block;
-    justify-items: center;
-    justify-content: center;
+    justify-items: left;
 }
 @media screen and (min-width: 870px){
     .noticia div{
