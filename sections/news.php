@@ -72,50 +72,40 @@
     </nav>
     <!--CONTENIDO CENTRAL-->
     <section class="contenedor-noticias">
-        <!--Noticias relevantes-->
-        <a href="/racingdivision/noticias/fromudg.html">
-            <div>
-                <img src="/racingdivision/noticias/img/from-udg.png">
-                <p>UdG Racing Division gets a workshop at the University of Girona</p>
-            </div>
-        </a>
-        <a href="/racingdivision/noticias/way-to-fss.html">
-            <div>
-                <img src="/racingdivision/noticias/img/way-to-fss.jpg">
-                <p>UdG Racing Division opens its way to Formula Student Spain 2026</p>
-            </div>
-        </a>
-        <a href="/racingdivision/noticias/longhistory.html">
-            <div>
-                <img src="/racingdivision/noticias/img/long-history.jpg">
-                <p>We continue the legacy of the original UdG Racing Team</p>
-            </div>
-        </a>
-        <!--Fin de noticias relevantes-->
-        <a href="/racingdivision/noticias/conference-at-udg.html">
-            <div>
-                <img src="/racingdivision/noticias/img/conference-at-udg.jpg">
-                <p>Oriol Vidal, engineer and competitor of the Dakar Rally, gives a conference at the UdG</p>
-            </div>
-        </a>
-        <a href="/racingdivision/noticias/vehicle-update.html">
-            <div>
-                <img src="/racingdivision/noticias/img/vehicle-update.jpg">
-                <p> The departments of the UdG Racing Division keep working at full speed!</p>
-            </div>
-        </a>
-        <a href="/racingdivision/noticias/3dmodel.html">
-            <div>
-                <img src="/racingdivision/noticias/img/3d-model.png">
-                <p>UdG Racing Division creates its first 3D model of the prototype</p>
-            </div>
-        </a>
-        <a href="/racingdivision/noticias/cleaningworkshop.html">
-            <div>
-                <img src="/racingdivision/noticias/img/cleaning-workspace.jpg">
-                <p>The team cleans their workshop at the Thermal Engines Laboratory of the UdG</p>
-            </div>
-        </a>
+        <?php
+            require "../php/claseNoticia.php";
+            require "../php/dbconnection.php";
+            // Selecciona el lang de la URL establecido por noticias.js
+            $lang = $_GET['lang'] ?? 'es';
+
+            // Comando a ejecutar en la base de datos, devuelve todos los datos para crear un objeto noticia. Estos están
+            // ordenados por relevancia de manera que primero salgan las noticias relevantes y luego por id, de mayor a 
+            // menor para mostrar las noticias mas recientes arriba (debajo de las relevantes).
+            $SQL = 'SELECT id, shortDesc, largeDesc, lang, foto FROM noticias WHERE lang = :lang ORDER BY relevant DESC, id DESC';
+            $rst = $conn -> prepare($SQL);
+            // Pasa el parámetro lang a la consulta SQL
+            $rst -> bindParam(':lang', $lang);
+            $rst->execute();
+            /// Este fetch mode devuelve un array con objetos Noticia creados automáticamente con los atributos
+            /// público de esa clase.
+            $rst -> setFetchMode(PDO::FETCH_CLASS, "Noticia");
+            $allNews = $rst -> fetchAll();
+
+            /// Por cada noticia del array, la añade a la sección en forma de link en formato foto y descripción corta
+            /// debajo. Los links de las noticias, llevan a una plantilla noticia con un id (id de la noticia) y un idioma
+            /// pasados por url, estos dos son las claves primarias de las noticias en la bdd y son los que 
+            /// determinan el contenido de la plantilla y el idioma en el que estará.
+            foreach($allNews as $actuallNews){
+                echo '
+                    <a href="/racingdivision/noticias/noticia.php?id=' . $actuallNews->getId() . '&lang=' . $actuallNews->getLang() . '">
+                    <div>
+                    <img src="/racingdivision/noticias/img/'. $actuallNews -> getFoto() .'">
+                    <p>' . $actuallNews -> getShortDesc() . '</p>
+                    </div>
+                    </a>
+                ';
+            }
+        ?>
     </section>
     <!--PIE DE PÁGINA-->
     <footer class="pie-pag">
@@ -154,5 +144,6 @@
     </footer>
     <div id="createdBy">Created by Javier Granados - Contact: jmelekhov@gmail.com</div>
     <script src="/racingdivision/scripts/script.js"></script>
+    <script src="/racingdivision/scripts/noticias.js"></script>
 </body>
 </html>
