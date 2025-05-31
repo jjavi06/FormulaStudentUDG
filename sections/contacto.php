@@ -50,7 +50,7 @@
             <li><a href="/racingdivision/index.html" data-i18n="contactForm.home">Home</a></li>
             <li><a href="/racingdivision/sections/aboutUs.html" data-i18n="contactForm.aboutUs">About Us</a></li>
             <li><a href="/racingdivision/sections/sponsors&collaborators.php" data-i18n="contactForm.sponsors">Sponsors &<br>Collaborators</a></li>
-            <li><a href="/racingdivision/sections/news.html" data-i18n="contactForm.news">News</a></li>
+            <li><a href="/racingdivision/sections/news.php" data-i18n="contactForm.news">News</a></li>
             <li><a href="/racingdivision/sections/contacto.php" data-i18n="contactForm.contact">Get In Touch</a></li>
             <img src="/racingdivision/img/logo-blanco.png" alt="">
         </ul>
@@ -61,7 +61,7 @@
             <li><a href="/racingdivision/index.html" data-i18n="contactForm.home">Home</a></li>
             <li><a href="/racingdivision/sections/aboutUs.html" data-i18n="contactForm.aboutUs">About Us</a></li>
             <li><a href="/racingdivision/sections/sponsors&collaborators.php" data-i18n="contactForm.sponsors">Sponsors & Collaborators</a></li>
-            <li><a href="/racingdivision/sections/news.html" data-i18n="contactForm.news">News</a></li>
+            <li><a href="/racingdivision/sections/news.php" data-i18n="contactForm.news">News</a></li>
             <li><a href="/racingdivision/sections/contacto.php" data-i18n="contactForm.contact">Get In Touch</a></li>
             <select id="language-select-pc" class="lang-sel-pc">
                 <option value="es">ES</option>
