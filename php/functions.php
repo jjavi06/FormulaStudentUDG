@@ -22,7 +22,7 @@ function MostrarMensaje(bool $valido, $name = "", $mail = "", $mensaje = ""){
     <!--CABECERA DE LA PÁGINA-->
     <header>
         <img src="/racingdivision/img/coche-header.png" class="logo, carLogo" id="headerCar">
-        <a href="/racingdivision/index.html" class="logo" id="headerLogo"><img src="/racingdivision/img/logo.png"></a>
+        <a href="/racingdivision/index.php" class="logo" id="headerLogo"><img src="/racingdivision/img/logo.png"></a>
         <nav class="navbar">
             <div class="hamburger" id="hamburger">
                 <img id="hamburgerImg" src="/racingdivision/img/hamburger-blue.png">
@@ -32,7 +32,7 @@ function MostrarMensaje(bool $valido, $name = "", $mail = "", $mensaje = ""){
     <!-- Links del menú hamburguesa -->
     <div class="hamburger-links">
         <ul class="nav-links" id="nav-links">
-            <li><a href="/racingdivision/index.html" data-i18n="contactForm.home">Home</a></li>
+            <li><a href="/racingdivision/index.php" data-i18n="contactForm.home">Home</a></li>
             <li><a href="/racingdivision/sections/aboutUs.html" data-i18n="contactForm.aboutUs">About Us</a></li>
             <li><a href="/racingdivision/sections/sponsors&collaborators.php" data-i18n="contactForm.sponsors">Sponsors &<br>Collaborators</a></li>
             <li><a href="/racingdivision/sections/news.php" data-i18n="contactForm.news">News</a></li>
@@ -43,7 +43,7 @@ function MostrarMensaje(bool $valido, $name = "", $mail = "", $mensaje = ""){
     <!--MENÚ DE NAVEGACIÓN-->
     <nav class="menu">
         <ul class="nav-links">
-            <li><a href="/racingdivision/index.html" data-i18n="contactForm.home">Home</a></li>
+            <li><a href="/racingdivision/index.php" data-i18n="contactForm.home">Home</a></li>
             <li><a href="/racingdivision/sections/aboutUs.html" data-i18n="contactForm.aboutUs">About Us</a></li>
             <li><a href="/racingdivision/sections/sponsors&collaborators.php" data-i18n="contactForm.sponsors">Sponsors & Collaborators</a></li>
             <li><a href="/racingdivision/sections/news.php" data-i18n="contactForm.news">News</a></li>

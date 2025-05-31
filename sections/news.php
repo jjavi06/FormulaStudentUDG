@@ -32,7 +32,7 @@
     <!--CABECERA DE LA PÁGINA-->
     <header>
         <img src="/racingdivision/img/coche-header.png" class="logo, carLogo" id="headerCar">
-        <a href="/racingdivision/index.html" class="logo" id="headerLogo"><img src="/racingdivision/img/logo.png"></a>
+        <a href="/racingdivision/index.php" class="logo" id="headerLogo"><img src="/racingdivision/img/logo.png"></a>
         <nav class="navbar">
             <div class="hamburger" id="hamburger">
                 <img id="hamburgerImg" src="/racingdivision/img/hamburger-blue.png">
@@ -47,7 +47,7 @@
                 <option value="ca">CA</option>
                 <option value="en">EN</option>
             </select></li>
-            <li><a href="/racingdivision/index.html" data-i18n="news.home">Home</a></li>
+            <li><a href="/racingdivision/index.php" data-i18n="news.home">Home</a></li>
             <li><a href="/racingdivision/sections/aboutUs.html" data-i18n="news.aboutUs">About Us</a></li>
             <li><a href="/racingdivision/sections/sponsors&collaborators.php" data-i18n="news.sponsors">Sponsors &<br>Collaborators</a></li>
             <li><a href="/racingdivision/sections/news.php" data-i18n="news.news">News</a></li>
@@ -58,7 +58,7 @@
     <!--MENÚ DE NAVEGACIÓN-->
     <nav class="menu">
         <ul class="nav-links">
-            <li><a href="/racingdivision/index.html" data-i18n="news.home">Home</a></li>
+            <li><a href="/racingdivision/index.php" data-i18n="news.home">Home</a></li>
             <li><a href="/racingdivision/sections/aboutUs.html" data-i18n="news.aboutUs">About Us</a></li>
             <li><a href="/racingdivision/sections/sponsors&collaborators.php" data-i18n="news.sponsors">Sponsors & Collaborators</a></li>
             <li><a href="/racingdivision/sections/news.php" data-i18n="news.news">News</a></li>
