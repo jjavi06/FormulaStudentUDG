@@ -37,7 +37,7 @@ else if(window.innerWidth < 1100){
 else{
     imgMedioArriba.style.display = "block";
     imgMedioAbajo.style.display = "none";
-    anchoContenedor = window.innerWidth * 0.80;
+    anchoContenedor = window.innerWidth * 0.79;
     visibleSlides = 3;
     slideWidth = anchoContenedor/visibleSlides - anchoContenedor/visibleSlides * 0.01;
     imagenesNoticias.forEach(img => {
