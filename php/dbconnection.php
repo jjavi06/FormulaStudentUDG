@@ -1,8 +1,9 @@
 <?php
+require 'claves.php';
 $server = "localhost";
-$dbName = "racingdivision";
-$user = "racingdivision";
-$password = "RacingUdG25#.";
+$dbName = GetDBName();
+$user = GetDBUser();
+$password = GetDBPassword();
 $dsn = 'mysql:host=' . $server . ';dbname=' . $dbName;
 
 try{
