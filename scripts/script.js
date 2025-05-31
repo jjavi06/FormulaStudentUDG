@@ -114,18 +114,18 @@ const savedLang = localStorage.getItem("lang") || "es";
 loadLanguage(savedLang);
 
 // Actualizar el <select> para reflejar el idioma guardado
-let languageSelect;
+let selectorIdioma;
 if(window.innerWidth < 870)
-  languageSelect = document.getElementById("language-select-mobile");
+  selectorIdioma = document.getElementById("language-select-mobile");
 else
-  languageSelect = document.getElementById("language-select-pc");
+  selectorIdioma = document.getElementById("language-select-pc");
 
-if (languageSelect) {
-  languageSelect.value = savedLang;
+if (selectorIdioma) {
+  selectorIdioma.value = savedLang;
 }
 
 // CAMBIOS DE IDIOMA
-languageSelect.addEventListener("change", function () {
+selectorIdioma.addEventListener("change", function () {
   const lang = this.value;
   localStorage.setItem("lang", lang);  // Guardar selección
   loadLanguage(lang);                  // Aplicar traducción
