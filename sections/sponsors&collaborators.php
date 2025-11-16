@@ -73,13 +73,50 @@
     </nav>
     <!--CONTENIDO CENTRAL-->
     <section>
+        <!--------------------------------------------------------------------------------------------------------------------->
         <article id="sponsors">
-            <div>
-                <a href="https://www.eic.cat/" target="_blank"><img src="/racingdivision/img/eic-logo-azul.jpg"></a>
-                <a href="https://patronateps.udg.edu/" target="_blank"><img src="/racingdivision/img/patronat.png"></a>
-                <a href="https://www.udg.edu/ca/" target="_blank"><img src="/racingdivision/img/udg-logo.png"></a>
+            <h2 data-i18n="sponsors.mainSponsor">Main sponsor</h2>
+            <div class="logos">
+                <a href="https://jbmcamp.com/"><img src="/racingdivision/sections/logosSponsors/logo-jbm.png"></a>
+            </div>
+            <!-- <h2 data-i18n="sponsors.platinum">Platinum</h2>
+            <div class="logos">
+
+            </div> -->
+            <!-- <h2 data-i18n="sponsors.gold">Gold</h2>
+            <div class="logos">
+
+            </div> -->
+            <!-- <h2 data-i18n="sponsors.silver">Silver</h2>
+            <div class="logos">
+
+            </div> -->
+            <h2 data-i18n="sponsors.bronze">Bronze</h2>
+            <div class="logos">
+                <a href="https://www.eic.cat"><img src="/racingdivision/sections/logosSponsors/logo-eic.png"></a>
+                <a href="https://ngbrakes.com"><img src="/racingdivision/sections/logosSponsors/logo-ngBrakes.png"></a>
+                <a href="https://www.isb-industries.com/es/"><img src="/racingdivision/sections/logosSponsors/logo-isb.png"></a>
+            </div>
+            <h2 data-i18n="sponsors.collaborators">Colaborators</h2>
+            <div class="logos">
+                <a href="https://www.compoxi.com/ca/"><img src="/racingdivision/sections/logosSponsors/logo-compoxi.png"></a>
+                <a href="https://amade.udg.edu"><img src="/racingdivision/sections/logosSponsors/logo-amade.png"></a>
+                <a href="https://www.udg.edu/ca/grupsrecerca/grefema"><img src="/racingdivision/sections/logosSponsors/logo-grefema.png"></a>
+                <a href="https://www.artein.es/es/"><img src="/racingdivision/sections/logosSponsors/logo-artein.png"></a>
+                <a href="https://www.rderacing.com"><img src="/racingdivision/sections/logosSponsors/logo-rdeRacing.png"></a>
+            </div>
+            <h2 data-i18n="sponsors.software">Software</h2>
+            <div class="logos">
+                <a href="https://www.solidworks.com"><img src="/racingdivision/sections/logosSponsors/logo-solidWorks.png"></a>
+            </div>
+            <h2 data-i18n="sponsors.faculty">Faculty</h2>
+            <div class="logos">
+                <a href="https://www.udg.edu/ca/"><img src="/racingdivision/sections/logosSponsors/logo-udg.png"></a>
+                <a href="https://www.eram.cat/en/"><img src="/racingdivision/sections/logosSponsors/logo-eram.png"></a>
+                <a href="https://www.udg.edu/es/eps"><img src="/racingdivision/sections/logosSponsors/logo-eps.png"></a>
             </div>
         </article>
+        <!--------------------------------------------------------------------------------------------------------------------->
         <article id="help-us">
             <h2 data-i18n="sponsors.title1">Help us build our race car!</h2>
             <p data-i18n="sponsors.p1">As a non-profit organization, at UdG Racing Division we are looking for sponsors to support our project and help us build the best race car to compete in Formula Student Spain.</p>

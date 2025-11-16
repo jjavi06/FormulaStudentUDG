@@ -43,6 +43,14 @@
         "sponsors": "Patrocinadors & Col·laboradors",
         "news": "Notícies",
         "contact": "Contacta'ns",
+        "mainSponsor": "Patrocinador Principal",
+        "platinum": "Platí",
+        "gold": "Or",
+        "silver": "Plata",
+        "bronze": "Bronze",
+        "collaborators": "Col·laboradors",
+        "software": "Proveidors de Programari",
+        "faculty": "Facultat",
         "title1": "Ajuda'ns a construir el nostre cotxe!",
         "p1": "Com a organització sense ànim de lucre, a UdG Racing Division busquem patrocinadors que impulsin el nostre projecte i ens ajudin a construir el millor monoplaça per competir a la Formula Student Spain.",
         "p2": "Després de diversos anys d'inactivitat, hem tornat amb més força i motivació que mai.",
@@ -97,7 +105,8 @@
         "news": "Notícies",
         "contact": "Contacta'ns",
         "contactFooter": "Contacte",
-        "sponsorFooter": "Fer-se Patrocinador"
+        "sponsorFooter": "Fer-se Patrocinador",
+        "masNoticias": "Altres notícies"
     },
     "mensaje": {
         "estadoValido": "El missatge s'ha enviat correctament.",

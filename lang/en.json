@@ -43,6 +43,14 @@
         "sponsors": "Sponsors & Collaborators",
         "news": "News",
         "contact": "Get in Touch",
+        "mainSponsor": "Main Sponsor",
+        "platinum": "Platinum",
+        "gold": "Gold",
+        "silver": "Silver",
+        "bronze": "Bronze",
+        "collaboratos": "Collaborators", 
+        "software": "Software Providers",
+        "faculty": "Faculty",
         "title1": "Help us build our race car!",
         "p1": "As a non-profit organization, at UdG Racing Division we are looking for sponsors to support our project and help us build the best race car to compete in Formula Student Spain.",
         "p2": "After several years of inactivity, we're back—stronger and more motivated than ever.",
@@ -97,7 +105,8 @@
         "news": "News",
         "contact": "Get in Touch",
         "contactFooter": "Contact",
-        "sponsorFooter": "Become a Sponsor"        
+        "sponsorFooter": "Become a Sponsor",
+        "masNoticias": "Other news"  
     },
     "mensaje": {
         "estadoValido": "The message has been sent successfully.",

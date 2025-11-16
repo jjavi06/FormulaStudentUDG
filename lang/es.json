@@ -43,6 +43,14 @@
         "sponsors": "Patrocinadores & Colaboradores",
         "news": "Noticias",
         "contact": "Contáctanos",
+        "mainSponsor": "Patrocinador Principal",
+        "platinum": "Platino",
+        "gold": "Oro",
+        "silver": "Plata",
+        "bronze": "Bronce",
+        "collaborators": "Colaboradores",
+        "software": "Proveedores de Software",
+        "faculty": "Facultad",
         "title1": "¡Ayúdanos a construir nuestro coche!",
         "p1": "Como organización sin ánimo de lucro, en UdG Racing Division buscamos patrocinadores que impulsen nuestro proyecto y nos ayuden a construir el mejor monoplaza para competir en Formula Student Spain.",
         "p2": "Tras varios años de inactividad, hemos vuelto con más fuerza y motivación que nunca.",
@@ -97,7 +105,8 @@
         "news": "Noticias",
         "contact": "Contáctanos",
         "contactFooter": "Contacto",
-        "sponsorFooter": "Hacerse Patrocinador"
+        "sponsorFooter": "Hacerse Patrocinador",
+        "masNoticias": "Otras noticias"
     },
     "mensaje": {
         "estadoValido": "El mensaje se ha enviado correctamente.",
