@@ -11,6 +11,11 @@
     align-items: center;
     margin: 1%; 
     padding: 2%;
+    transition: transform 0.3s ease-in-out;
+}
+
+#sponsors a:hover {
+    transform: scale(1.3); 
 }
 
 #sponsors img {
