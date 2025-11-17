@@ -113,6 +113,12 @@ hr{
 article h2{
     text-align: center;
 }
+.titulo-azul{
+    color: darkblue;
+}
+.titulo-blanco{
+    color: white;
+}
 article .btn-azul{
     justify-self: center;
 }

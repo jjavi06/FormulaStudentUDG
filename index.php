@@ -76,7 +76,7 @@
     <section class="white-section">
         <article class="parrafo-inicio">
             <div>
-                <h2 data-i18n="inicio.title1">The 2026 challenge begins!</h2>
+                <h2 class="titulo-azul" data-i18n="inicio.title1">The 2026 challenge begins!</h2>
                 <p data-i18n="inicio.p1">Behind every bolt, every tube and every curve of this single-seater lie months of design, dedication and passion. This is the result of the collective effort of UdG Racing Division, a multidisciplinary team of students from the University of Girona already gearing up for the 2026 Formula Student Spain season.</p>
                 <p data-i18n="inicio.p2">This machine is more than speed: it’s learning, innovation, and the reflection of a university community united by a shared goal.</p>
             </div>
@@ -85,7 +85,7 @@
         <article class="parrafo-inicio">
             <img src="/racingdivision/img/inicio2.jpg" class="img-inicio" id="img-medio-arriba">
             <div>
-                <h2 data-i18n="inicio.title2">More than a team, a technical family</h2>
+                <h2 class="titulo-azul" data-i18n="inicio.title2">More than a team, a technical family</h2>
                 <p data-i18n="inicio.p3">This is the true driving force behind UdG Racing Division: a group of students, faculty, and collaborators brought together by a shared passion and a common goal.</p>
                 <p data-i18n="inicio.p4">Behind every component of our race car lies countless hours of effort, debate, innovation, and valuable learning. Formula Student is more than a competition, it’s a school of engineering and life.</p>
                 <p data-i18n="inicio.p5">Thank you to everyone who’s part of this journey. The road to 2026 is only possible with you.</p>
@@ -94,7 +94,7 @@
         </article>
         <article class="parrafo-inicio">
             <div>
-                <h2 data-i18n="inicio.title3">Every detail matters</h2>
+                <h2 class="titulo-azul" data-i18n="inicio.title3">Every detail matters</h2>
                 <p data-i18n="inicio.p6">Precision, analysis, and constant review are key to achieving excellence. At UdG Racing Division, every part is meticulously checked to ensure our race car meets the highest standards of safety, performance, and innovation.</p>
                 <p data-i18n="inicio.p7">It’s not just about building a car: it’s about understanding it, testing, failing, and improving, always as a team. Because the true power behind this project isn’t the engine, it’s the minds that bring it to life.</p>
             </div>
@@ -105,7 +105,7 @@
         <hr>
         <!--CARRUSEL NOTICIAS-->
         <article class="blue-article">
-            <h2 data-i18n="inicio.title4">News</h2>
+            <h2 class="titulo-blanco" data-i18n="inicio.title4">News</h2>
             <div id="noticias">
                 <button class="carousel-btn prev-btn" aria-label="Previous news">&lt;</button>
                 <div class="slides-container">
@@ -142,7 +142,7 @@
         <!--SPONSORS-->
         <hr>
         <article id="sponsors">
-            <h2 data-i18n="inicio.title5">Sponsors and Collaborators</h2>
+            <h2 class="titulo-blanco" data-i18n="inicio.title5">Sponsors and Collaborators</h2>
             <div>
                 <a href="https://www.eic.cat/" target="_blank"><img src="/racingdivision/img/white-eic-logo.png"></a>
                 <a href="https://patronateps.udg.edu/" target="_blank"><img src="/racingdivision/img/white-patronat-logo.png"></a>
