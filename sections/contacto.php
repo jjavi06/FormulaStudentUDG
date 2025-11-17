@@ -94,7 +94,7 @@
                 <textarea name="message" id="mensajeContacto" rows="8" class="entrada-simple" required></textarea>
                 <!-- Google reCAPTCHA -->
                 <?php
-                    require '../php/claves.php';
+                    require_once '../php/claves.php';
                     $key = GetCaptchaKeyHtml();
                     echo '<div class="g-recaptcha" data-sitekey="' . $key . '"></div>'
                 ?>
