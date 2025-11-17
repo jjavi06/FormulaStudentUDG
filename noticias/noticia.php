@@ -98,6 +98,18 @@
                 if ($actualNews) {
                     echo '<div><img src="/racingdivision/noticias/img/' . $actualNews["foto"] . '"></div>';
                     echo $actualNews["largeDesc"];
+
+                    // Mostrar siguiente y anterior noticia
+                    require "../php/functions.php";
+                    $nextNews = SiguienteNoticia($idNews, $langNews);
+                    $prevNews = AnteriorNoticia($idNews, $langNews);
+                    echo '
+                        <div class="more-news">
+                        <a class="move-news" href="/racingdivision/noticias/noticia.php?id=' . $prevNews->getId() . '&lang=' . $prevNews->getLang() . '"><img src="/racingdivision/noticias/img/prev.png"></a>
+                        <a class="other-news" href="/racingdivision/sections/news.php?lang=' . $langNews . '"><p data-i18n="noticia.masNoticias"></p></a>
+                        <a class="move-news" href="/racingdivision/noticias/noticia.php?id=' . $nextNews->getId() . '&lang=' . $nextNews->getLang() . '"><img src="/racingdivision/noticias/img/next.png"></a>
+                        </div>
+                    ';
                 } else {
                     echo "Noticia no encontrada.";
                 }

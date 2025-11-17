@@ -118,4 +118,69 @@ function MostrarMensaje(bool $valido, $name = "", $mail = "", $mensaje = ""){
 </body>
 </html>';
 }
+// =============================================================================================================================
+// Cambiar de noticias, siguiente y anterior
+// =============================================================================================================================
+
+require "dbconnection.php";
+require_once "claseNoticia.php";
+
+// Buscar siguiente noticia
+function SiguienteNoticia($id, $idioma): ?Noticia{
+    global $conn;
+
+    $SQL = '(
+        select * from noticias
+        where id > :id and lang = :lang
+        order by id asc
+        limit 1
+        )
+        UNION ALL
+        (
+        -- Si la anterior no devuelve nada (no hay id >), busca la primera noticia del idioma
+        select * from noticias
+        where lang = :lang
+        order by id asc
+        limit 1
+        )
+        limit 1';
+    $rst = $conn -> prepare($SQL);
+    $rst -> bindParam(":id", $id);
+    $rst -> bindParam(":lang", $idioma);
+    $rst -> execute();
+    $rst -> setFetchMode(PDO::FETCH_CLASS, "Noticia");
+    $actualNews = $rst -> fetch();
+    return $actualNews ?: null;
+}
+
+// Buscar noticia anterior
+function AnteriorNoticia($id, $idioma): ?Noticia{
+    global $conn;
+
+    $SQL = '(
+        -- 1. Intenta encontrar la noticia con ID inmediatamente menor
+        select * from noticias
+        where id < :id and lang = :lang
+        order by id desc
+        limit 1
+        )
+        UNION ALL
+        (
+        -- 2. Si la anterior no existe, devuelve la noticia con el ID MÁXIMO (última noticia)
+        select * from noticias
+        where lang = :lang
+        order by id desc
+        limit 1
+        )
+        limit 1';
+
+    $rst = $conn -> prepare($SQL);
+    $rst -> bindParam(":id", $id);
+    $rst -> bindParam(":lang", $idioma);
+    $rst -> execute();
+    $rst -> setFetchMode(PDO::FETCH_CLASS, "Noticia"); 
+    $actualNews = $rst -> fetch();
+
+    return $actualNews ?: null;
+}
 ?>
